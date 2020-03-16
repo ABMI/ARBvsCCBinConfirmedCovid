@@ -1,4 +1,5 @@
 atlasId,atlasName,cohortId,name
-36,ARB user among confirmed cases of covid-19,36,ARB_user_among_confirmed_cases_of_covid19
-37,CCB user among confirmed cases of covid-19,37,CCB_user_among_confirmed_cases_of_covid19
+36,[LEGEND]ARB user among confirmed cases of covid-19,36,LEGENDARB_user_among_confirmed_cases_of_covid19
+43,[LEGEND]CCB user among confirmed cases of covid-19,43,LEGENDCCB_user_among_confirmed_cases_of_covid19
 24,[SCYou]All-cause mortality,24,SCYouAllcause_mortality
+39,"[SCY]Composite endpoint-ECMO, intubation, invasive ventilation, and death",39,SCYComposite_endpointECMO_intubation_invasive_ventilation_and_death

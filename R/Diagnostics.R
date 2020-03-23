@@ -114,33 +114,33 @@ createDiagnosticsForSubset <- function(subset, allControls, outputFolder, cmOutp
   
   # Statistical power --------------------------------------------------------------------------------------
   outcomeIdsOfInterest <- subset$outcomeId[!(subset$outcomeId %in% controlSubset$outcomeId)]
-  mdrrs <- data.frame()
-  for (outcomeId in outcomeIdsOfInterest) {
-    strataFile <- subset$strataFile[subset$outcomeId == outcomeId]
-    if (strataFile == "") {
-      strataFile <- subset$studyPopFile[subset$outcomeId == outcomeId]
-    }
-    population <- readRDS(file.path(cmOutputFolder, strataFile))
-    modelFile <- subset$outcomeModelFile[subset$outcomeId == outcomeId]
-    model <- readRDS(file.path(cmOutputFolder, modelFile))
-    mdrr <- CohortMethod::computeMdrr(population = population, 
-                                      alpha = 0.05, 
-                                      power = 0.8, 
-                                      twoSided = TRUE, 
-                                      modelType =  model$outcomeModelType)
-    
-    mdrr$outcomeId <- outcomeId
-    mdrr$outcomeName <- subset$outcomeName[subset$outcomeId == outcomeId]
-    mdrrs <- rbind(mdrrs, mdrr)
-  }
-  mdrrs$analysisId <- analysisId
-  mdrrs$analysisDescription <- subset$analysisDescription[1]
-  mdrrs$targetId <- targetId
-  mdrrs$targetName <- subset$targetName[1]
-  mdrrs$comparatorId <- comparatorId
-  mdrrs$comparatorName <- subset$comparatorName[1]
-  fileName <-  file.path(diagnosticsFolder, paste0("mdrr_a", analysisId, "_t", targetId, "_c", comparatorId, ".csv"))
-  write.csv(mdrrs, fileName, row.names = FALSE)
+  # mdrrs <- data.frame()
+  # for (outcomeId in outcomeIdsOfInterest) {
+  #   strataFile <- subset$strataFile[subset$outcomeId == outcomeId]
+  #   if (strataFile == "") {
+  #     strataFile <- subset$studyPopFile[subset$outcomeId == outcomeId]
+  #   }
+  #   population <- readRDS(file.path(cmOutputFolder, strataFile))
+  #   modelFile <- subset$outcomeModelFile[subset$outcomeId == outcomeId]
+  #   model <- readRDS(file.path(cmOutputFolder, modelFile))
+  #   mdrr <- CohortMethod::computeMdrr(population = population, 
+  #                                     alpha = 0.05, 
+  #                                     power = 0.8, 
+  #                                     twoSided = TRUE, 
+  #                                     modelType =  model$outcomeModelType)
+  #   
+  #   mdrr$outcomeId <- outcomeId
+  #   mdrr$outcomeName <- subset$outcomeName[subset$outcomeId == outcomeId]
+  #   mdrrs <- rbind(mdrrs, mdrr)
+  # }
+  # mdrrs$analysisId <- analysisId
+  # mdrrs$analysisDescription <- subset$analysisDescription[1]
+  # mdrrs$targetId <- targetId
+  # mdrrs$targetName <- subset$targetName[1]
+  # mdrrs$comparatorId <- comparatorId
+  # mdrrs$comparatorName <- subset$comparatorName[1]
+  # fileName <-  file.path(diagnosticsFolder, paste0("mdrr_a", analysisId, "_t", targetId, "_c", comparatorId, ".csv"))
+  # write.csv(mdrrs, fileName, row.names = FALSE)
   
   # Covariate balance --------------------------------------------------------------------------------------
   outcomeIdsOfInterest <- subset$outcomeId[!(subset$outcomeId %in% controlSubset$outcomeId)]

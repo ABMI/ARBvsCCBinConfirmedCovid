@@ -71,9 +71,9 @@ filenames <- list.files(path = getwd(), pattern = "sql|json", all.files=T, full.
 ## Replace COVID-19 -> inlfuenza
 for( f in filenames ){
   x <- readLines(f)
-  if(length(grep("320651",x))){
+  if(length(grep("37310269",x))){
     print(f)
-    y <- gsub( "320651", "37310269", x )
+    y <- gsub( "37310269", "37311061", x )
     writeLines(y, con = f)
   }
 }

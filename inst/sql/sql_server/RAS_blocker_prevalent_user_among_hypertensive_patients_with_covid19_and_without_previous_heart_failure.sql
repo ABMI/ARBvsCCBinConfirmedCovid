@@ -14,7 +14,7 @@ SELECT 2 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 INSERT INTO #Codesets (codeset_id, concept_id)
 SELECT 6 as codeset_id, c.concept_id FROM (select distinct I.concept_id FROM
 ( 
-  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (37310269)
+  select concept_id from @vocabulary_database_schema.CONCEPT where concept_id in (37311061)
 
 ) I
 ) C;

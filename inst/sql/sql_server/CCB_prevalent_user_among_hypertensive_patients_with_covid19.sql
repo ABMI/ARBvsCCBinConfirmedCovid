@@ -193,7 +193,7 @@ from
 where de.drug_concept_id in (SELECT concept_id from  #Codesets where codeset_id = 8)
 ) C
 
-WHERE C.drug_era_end_date >= DATEFROMPARTS(2019, 12, 31)
+WHERE C.drug_era_end_date >= DATEFROMPARTS(@comprehensive_observation_end_date)
 AND DATEDIFF(d,C.drug_era_start_date, C.drug_era_end_date) >= 30
 -- End Drug Era Criteria
 

@@ -44,6 +44,7 @@
 #' @param databaseName         The full name of the database (e.g. 'Medicare Claims
 #'                             Synthetic Public Use Files (SynPUFs)').
 #' @param databaseDescription  A short description (several sentences) of the database.
+#' @param comprehensiveObservationEndDate  The end date of comprehensive observation period (e.g. '2019-12-31')
 #' @param createCohorts        Create the cohortTable table with the exposure and outcome cohorts?
 #' @param synthesizePositiveControls  Should positive controls be synthesized?
 #' @param runAnalyses          Perform the cohort method analyses?
@@ -80,6 +81,7 @@ execute <- function(connectionDetails,
                     databaseId = "Unknown",
                     databaseName = "Unknown",
                     databaseDescription = "Unknown",
+                    comprehensiveObservationEndDate = '2019-12-31',
                     createCohorts = TRUE,
                     synthesizePositiveControls = TRUE,
                     runAnalyses = TRUE,
@@ -104,7 +106,8 @@ execute <- function(connectionDetails,
                   cohortDatabaseSchema = cohortDatabaseSchema,
                   cohortTable = cohortTable,
                   oracleTempSchema = oracleTempSchema,
-                  outputFolder = outputFolder)
+                  outputFolder = outputFolder,
+                  comprehensiveObservationEndDate = comprehensiveObservationEndDate)
   }
   
   # Set doPositiveControlSynthesis to FALSE if you don't want to use synthetic positive controls:

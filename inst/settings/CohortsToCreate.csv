@@ -10,11 +10,7 @@ atlasId,atlasName,cohortId,name
 64,Oxygen therapy,64,Oxygen_therapy
 36,ARB prevalent user among hypertensive patients with covid-19 and without previous heart failure,36,ARB_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
 48,CCB prevalent user among hypertensive patients with covid-19 and without previous heart failure,48,CCB_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
-54,ARB continuous user among hypertensive patients with covid-19,54,ARB_continuous_user_among_hypertensive_patients_with_covid19
-55,CCB continuous user among hypertensive patients with covid-19,55,CCB_continuous_user_among_hypertensive_patients_with_covid19
 52,RAS blocker prevalent user among hypertensive patients with covid-19,52,RAS_blocker_prevalent_user_among_hypertensive_patients_with_covid19
 51,RAS blocker prevalent user among hypertensive patients with covid-19 and without previous heart failure,51,RAS_blocker_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
-56,RAS blocker continuous user among hypertensive patients with covid-19,56,RAS_blocker_continuous_user_among_hypertensive_patients_with_covid19
 65,ACEI prevalent user among hypertensive patients with covid-19,65,ACEI_prevalent_user_among_hypertensive_patients_with_covid19
 66,ACEI prevalent user among hypertensive patients with covid-19 and without previous heart failure,66,ACEI_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
-67,ACEI continuous user among hypertensive patients with covid-19,67,ACEI_continuous_user_among_hypertensive_patients_with_covid19

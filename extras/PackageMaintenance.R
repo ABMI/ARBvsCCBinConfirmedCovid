@@ -84,7 +84,7 @@ for( f in filenames ){
   x <- readLines(f)
   if(length(grep("2019, 12, 31",x))){
     print(f)
-    y <- gsub( "2019, 12, 31", "2009, 9, 1", x )
+    y <- gsub( "2019, 12, 31", "@comprehensive_observation_end_date", x )
     writeLines(y, con = f)
   }
 }

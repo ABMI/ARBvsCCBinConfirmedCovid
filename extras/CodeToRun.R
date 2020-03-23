@@ -1,4 +1,4 @@
-library(ARBvsCCBinConfirmedCovid)
+library(RASBlockerVsCCBinCovid)
 
 # Optional: specify where the temporary files (used by the ff package) will be created:
 options(fftempdir = "s:/FFtemp")
@@ -7,7 +7,7 @@ options(fftempdir = "s:/FFtemp")
 maxCores <- parallel::detectCores()
 
 # The folder where the study intermediate and result files will be written:
-outputFolder <- "s:/ARBvsCCBinConfirmedCovid"
+outputFolder <- "s:/RASBlockerVsCCBinCovid"
 
 # Details for connecting to the server:
 connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "pdw",

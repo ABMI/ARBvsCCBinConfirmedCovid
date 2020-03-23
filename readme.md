@@ -1,4 +1,4 @@
-ARBvsCCBinConfirmedCovid
+RASBlockervsCCBinCovid
 ==============================
 
 <img src="https://img.shields.io/badge/Study%20Status-Design%20Finalized-brightgreen.svg" alt="Study Status: Design Finalized">
@@ -10,11 +10,11 @@ ARBvsCCBinConfirmedCovid
 - Study lead forums tag: **[SCYou](https://forums.ohdsi.org/u/SCYou)**
 - Study start date: **March 16, 2020**
 - Study end date:
-- Protocol: 
+- Protocol:
 - Publications:
 - Results explorer:
 
-This study aims to compare the risk of mortality or severe clinical outcome between ARB and CCB, and characterize severe case in ARB users
+This study aims to compare the risk of mortality or severe clinical outcome between RAS blockers and CCB.
 
 Requirements
 ============
@@ -52,16 +52,16 @@ How to run
 
 	Alternatively, ensure that you have installed only the 64-bit versions of R and Java, as described in [the Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/OhdsiAnalyticsTools.html#installR)
 
-2. In `R`, use the following `devtools` command to install the ARBvsCCBinConfirmedCovid package:
+2. In `R`, use the following `devtools` command to install the RASBlockerVsCCBinCovid package:
 
 	```r
-	install() # Note: it is ok to delete inst/doc
+	install_github("ohdsi-studies/RASBlockerVsCCBinCovid") # Note: it is ok to delete inst/doc
 	```
 
 3. Once installed, you can execute the study by modifying and using the code below. For your convenience, this code is also provided under `extras/CodeToRun.R`:
 
 	```r
-	library(ARBvsCCBinConfirmedCovid)
+	library(RASBlockerVsCCBinCovid)
 
 	# Optional: specify where the temporary files (used by the ff package) will be created:
 	options(fftempdir = "c:/FFtemp")
@@ -73,7 +73,7 @@ How to run
 	minCellCount <- 5
 
 	# The folder where the study intermediate and result files will be written:
-	outputFolder <- "c:/ARBvsCCBinConfirmedCovid"
+	outputFolder <- "c:/RASBlockerVsCCBinCovid"
 
 	# Details for connecting to the server:
 	# See ?DatabaseConnector::createConnectionDetails for help
@@ -133,11 +133,11 @@ How to run
 
 License
 =======
-The ARBvsCCBinConfirmedCovid package is licensed under Apache License 2.0
+The RASBlockerVsCCBinCovid package is licensed under Apache License 2.0
 
 Development
 ===========
-ARBvsCCBinConfirmedCovid was developed in ATLAS and R Studio.
+RASBlockerVsCCBinCovid was developed in ATLAS and R Studio.
 
 ### Development status
 

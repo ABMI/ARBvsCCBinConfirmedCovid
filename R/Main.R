@@ -108,7 +108,8 @@ execute <- function(connectionDetails,
                   cohortTable = cohortTable,
                   oracleTempSchema = oracleTempSchema,
                   outputFolder = outputFolder,
-                  comprehensiveObservationEndDate = comprehensiveObservationEndDate)
+                  comprehensiveObservationEndDate = comprehensiveObservationEndDate,
+                  targetDiseaseConceptIds = targetDiseaseConceptIds )
   }
   
   # Set doPositiveControlSynthesis to FALSE if you don't want to use synthetic positive controls:

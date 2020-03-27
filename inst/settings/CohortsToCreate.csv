@@ -1,16 +1,27 @@
 atlasId,atlasName,cohortId,name
-49,ARB prevalent user among hypertensive patients with covid-19,49,ARB_prevalent_user_among_hypertensive_patients_with_covid19
-50,CCB prevalent user among hypertensive patients with covid-19,50,CCB_prevalent_user_among_hypertensive_patients_with_covid19
-58,"Composite endpoint-ICU care, intubation, artificial ventilation, ECMO, and death",58,Composite_endpointICU_care_intubation_artificial_ventilation_ECMO_and_death
-24,All-cause mortality,24,Allcause_mortality
-60,ICU care,60,ICU_care
-61,Endotracheal intubation,61,Endotracheal_intubation
-62,Artificial ventilation,62,Artificial_ventilation
-63,ECMO,63,ECMO
-64,Oxygen therapy,64,Oxygen_therapy
-36,ARB prevalent user among hypertensive patients with covid-19 and without previous heart failure,36,ARB_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
-48,CCB prevalent user among hypertensive patients with covid-19 and without previous heart failure,48,CCB_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
-52,RAS blocker prevalent user among hypertensive patients with covid-19,52,RAS_blocker_prevalent_user_among_hypertensive_patients_with_covid19
-51,RAS blocker prevalent user among hypertensive patients with covid-19 and without previous heart failure,51,RAS_blocker_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
-65,ACEI prevalent user among hypertensive patients with covid-19,65,ACEI_prevalent_user_among_hypertensive_patients_with_covid19
-66,ACEI prevalent user among hypertensive patients with covid-19 and without previous heart failure,66,ACEI_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
+55,ARB prevalent user among hypertensive patients with covid-19,55,ARB_prevalent_user_among_hypertensive_patients_with_covid19
+56,CCB prevalent user among hypertensive patients with covid-19,56,CCB_prevalent_user_among_hypertensive_patients_with_covid19
+57,"Composite endpoint-ICU care, intubation, artificial ventilation, ECMO, and death",57,Composite_endpointICU_care_intubation_artificial_ventilation_ECMO_and_death
+58,All-cause mortality,58,Allcause_mortality
+59,ICU care,59,ICU_care
+60,Endotracheal intubation,60,Endotracheal_intubation
+61,Artificial ventilation,61,Artificial_ventilation
+62,ECMO,62,ECMO
+63,Oxygen therapy,63,Oxygen_therapy
+64,ARB prevalent user among hypertensive patients with covid-19 and without previous heart failure,64,ARB_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
+65,CCB prevalent user among hypertensive patients with covid-19 and without previous heart failure,65,CCB_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
+66,ARB continuous user among hypertensive patients with covid-19,66,ARB_continuous_user_among_hypertensive_patients_with_covid19
+67,CCB continuous user among hypertensive patients with covid-19,67,CCB_continuous_user_among_hypertensive_patients_with_covid19
+68,RAS blocker prevalent user among hypertensive patients with covid-19,68,RAS_blocker_prevalent_user_among_hypertensive_patients_with_covid19
+69,RAS blocker prevalent user among hypertensive patients with covid-19 and without previous heart failure,69,RAS_blocker_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
+70,RAS blocker continuous user among hypertensive patients with covid-19,70,RAS_blocker_continuous_user_among_hypertensive_patients_with_covid19
+71,ACEI prevalent user among hypertensive patients with covid-19,71,ACEI_prevalent_user_among_hypertensive_patients_with_covid19
+72,ACEI prevalent user among hypertensive patients with covid-19 and without previous heart failure,72,ACEI_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
+73,ACEI continuous user among hypertensive patients with covid-19,73,ACEI_continuous_user_among_hypertensive_patients_with_covid19
+77,Interferon [drug exposure outcome],77,Interferon_drug_exposure_outcome
+81,Hydroxychloroquine [drug exposure outcome],81,Hydroxychloroquine_drug_exposure_outcome
+82,Ribavirin [drug exposure outcome],82,Ribavirin_drug_exposure_outcome
+80,Lopinavir-Ritonavir [drug exposure outcome],80,LopinavirRitonavir_drug_exposure_outcome
+87,Human immunoglobulin G [drug exposure outcome],87,Human_immunoglobulin_G_drug_exposure_outcome
+83,Zanamivir or Oseltamivir [drug exposure outcome],83,Zanamivir_or_Oseltamivir_drug_exposure_outcome
+86,Antibiotics [drug exposure outcome],86,Antibiotics_drug_exposure_outcome

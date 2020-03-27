@@ -1,0 +1,361 @@
+{
+  "ExpressionLimit": {"Type": "All"},
+  "CollapseSettings": {
+    "CollapseType": "ERA",
+    "EraPad": 0
+  },
+  "CensorWindow": {
+    "StartDate": null,
+    "EndDate": null
+  },
+  "ConceptSets": [{
+    "expression": {"items": [
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1379969,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "5879",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "Interferon Alfa-2a",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1380068,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "5880",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "Interferon Alfa-2b",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 40798893,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP2721238",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "Interferon Alfa-2c",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 19044394,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "202912",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "Interferon Alfa-n1",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1385645,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "612937",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "Interferon Alfa-n3",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 19122123,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "5885",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "Interferon Type II",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 722424,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "75917",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "Interferon beta-1a",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 42903737,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "1314240",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "Interferon gamma-1a",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1380191,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "5882",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "Interferon gamma-1b",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 19109079,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "4381",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "Interferon-beta",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 43527209,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "1421648",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "gamma-interferon",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 35197907,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP4819272",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "interferon alfa(ball-1)",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 35198009,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "OMOP4819374",
+          "VOCABULARY_ID": "RxNorm Extension",
+          "CONCEPT_NAME": "interferon alfa(namalwa)",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1781314,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "59744",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "interferon alfacon-1",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 713196,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "72257",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "interferon beta-1b",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1714165,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "120608",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "peginterferon alfa-2a",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 1797155,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "253453",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "peginterferon alfa-2b",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      },
+      {
+        "isExcluded": false,
+        "concept": {
+          "INVALID_REASON_CAPTION": "Valid",
+          "CONCEPT_ID": 45775146,
+          "STANDARD_CONCEPT": "S",
+          "CONCEPT_CODE": "1546168",
+          "VOCABULARY_ID": "RxNorm",
+          "CONCEPT_NAME": "peginterferon beta-1a",
+          "DOMAIN_ID": "Drug",
+          "STANDARD_CONCEPT_CAPTION": "Standard",
+          "CONCEPT_CLASS_ID": "Ingredient",
+          "INVALID_REASON": "V"
+        },
+        "includeMapped": false,
+        "includeDescendants": true
+      }
+    ]},
+    "name": "Interferon",
+    "id": 0
+  }],
+  "EndStrategy": {"CustomEra": {
+    "DrugCodesetId": 0,
+    "GapDays": 7,
+    "Offset": 0
+  }},
+  "cdmVersionRange": ">=5.0.0",
+  "CensoringCriteria": [],
+  "QualifiedLimit": {"Type": "First"},
+  "InclusionRules": [],
+  "PrimaryCriteria": {
+    "CriteriaList": [{"DrugExposure": {
+      "OccurrenceEndDate": null,
+      "CorrelatedCriteria": null,
+      "DrugSourceConcept": null,
+      "CodesetId": 0,
+      "DrugTypeExclude": false,
+      "Quantity": null,
+      "DrugType": null,
+      "ProviderSpecialty": null,
+      "EffectiveDrugDose": null,
+      "Gender": null,
+      "DaysSupply": null,
+      "DoseUnit": null,
+      "VisitType": null,
+      "Refills": null,
+      "First": null,
+      "OccurrenceStartDate": null,
+      "RouteConcept": null,
+      "StopReason": null,
+      "LotNumber": null,
+      "Age": null
+    }}],
+    "PrimaryCriteriaLimit": {"Type": "All"},
+    "ObservationWindow": {
+      "PostDays": 0,
+      "PriorDays": 0
+    }
+  }
+}

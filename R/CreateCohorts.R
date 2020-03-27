@@ -21,7 +21,8 @@
                            cohortTable,
                            oracleTempSchema,
                            outputFolder,
-                           comprehensiveObservationEndDate) {
+                           comprehensiveObservationEndDate,
+                           targetDiseaseConceptIds) {
   
   # Create study cohort table structure:
   sql <- SqlRender::loadRenderTranslateSql(sqlFilename = "CreateCohortTable.sql",
@@ -49,7 +50,8 @@
                                              target_database_schema = cohortDatabaseSchema,
                                              target_cohort_table = cohortTable,
                                              target_cohort_id = cohortsToCreate$cohortId[i],
-                                             comprehensive_observation_end_date = comprehensiveObservationEndDate)
+                                             comprehensive_observation_end_date = comprehensiveObservationEndDate,
+                                             target_disease_concept_ids=targetDiseaseConceptIds)
     DatabaseConnector::executeSql(connection, sql)
   }
   

@@ -45,7 +45,8 @@ createCohorts <- function(connectionDetails,
                           cohortTable = "cohort",
                           oracleTempSchema,
                           outputFolder,
-                          comprehensiveObservationEndDate) {
+                          comprehensiveObservationEndDate,
+                          targetDiseaseConceptIds) {
   if (!file.exists(outputFolder))
     dir.create(outputFolder)
   
@@ -57,7 +58,8 @@ createCohorts <- function(connectionDetails,
                  cohortTable = cohortTable,
                  oracleTempSchema = oracleTempSchema,
                  outputFolder = outputFolder,
-                 comprehensiveObservationEndDate = comprehensiveObservationEndDate)
+                 comprehensiveObservationEndDate = comprehensiveObservationEndDate,
+                 targetDiseaseConceptIds= targetDiseaseConceptIds)
   
   pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerVsCCBinCovid")
   negativeControls <- read.csv(pathToCsv)

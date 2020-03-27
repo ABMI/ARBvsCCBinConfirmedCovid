@@ -106,6 +106,8 @@ How to run
             databaseId = databaseId,
             databaseName = databaseName,
             databaseDescription = databaseDescription,
+            comprehensiveObservationEndDate = '2019, 12, 31',
+            targetDiseaseConceptIds = 37311061, ##COVID-19: 37311061; Influenza: 4266367
             createCohorts = TRUE,
             synthesizePositiveControls = TRUE,
             runAnalyses = TRUE,

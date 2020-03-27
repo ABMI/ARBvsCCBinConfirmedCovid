@@ -88,3 +88,15 @@ for( f in filenames ){
     writeLines(y, con = f)
   }
 }
+
+#37311061
+filenames<-list.files(path = getwd(),pattern = "sql",all.files=T, full.names=T, recursive=T)
+## Replace Drug_era end date
+for( f in filenames ){
+  x <- readLines(f)
+  if(length(grep("37311061",x))){
+    print(f)
+    y <- gsub( "37311061", "@target_disease_concept_ids", x )
+    writeLines(y, con = f)
+  }
+}

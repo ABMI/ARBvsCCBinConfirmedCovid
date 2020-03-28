@@ -1,6 +1,6 @@
 # Copyright 2019 Observational Health Data Sciences and Informatics
 #
-# This file is part of RASBlockerVsCCBinCovid
+# This file is part of RASBlockerInCovid
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 #' Synthesize positive controls
 #'
 #' @details
-#' This function will synthesize positive controls based on the negative controls. The simulated outcomes
+#' This function will synthesize positve controls based on the negative controls. The simulated outcomes
 #' will be added to the cohort table.
 #'
 #' @param connectionDetails    An object of type \code{connectionDetails} as created using the
@@ -55,12 +55,12 @@ synthesizePositiveControls <- function(connectionDetails,
   
   synthesisSummaryFile <- file.path(outputFolder, "SynthesisSummary.csv")
   if (!file.exists(synthesisSummaryFile)) {
-    pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerVsCCBinCovid")
+    pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerInCovid")
     negativeControls <- read.csv(pathToCsv)
     exposureOutcomePairs <- data.frame(exposureId = negativeControls$targetId,
                                        outcomeId = negativeControls$outcomeId)
     exposureOutcomePairs <- unique(exposureOutcomePairs)
-    pathToJson <- system.file("settings", "positiveControlSynthArgs.json", package = "RASBlockerVsCCBinCovid")
+    pathToJson <- system.file("settings", "positiveControlSynthArgs.json", package = "RASBlockerInCovid")
     args <- ParallelLogger::loadSettingsFromJson(pathToJson)
     args$control$threads <- min(c(10, maxCores))
     
@@ -103,7 +103,7 @@ synthesizePositiveControls <- function(connectionDetails,
     result <- read.csv(synthesisSummaryFile)
   }
   ParallelLogger::logTrace("Merging positive with negative controls ")
-  pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerVsCCBinCovid")
+  pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerInCovid")
   negativeControls <- read.csv(pathToCsv)
   
   synthesisSummary <- read.csv(synthesisSummaryFile)
@@ -114,7 +114,7 @@ synthesizePositiveControls <- function(connectionDetails,
   synthesisSummary$oldOutcomeId <- synthesisSummary$outcomeId
   synthesisSummary$outcomeId <- synthesisSummary$newOutcomeId
   
-  pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerVsCCBinCovid")
+  pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerInCovid")
   negativeControls <- read.csv(pathToCsv)
   negativeControls$targetEffectSize <- 1
   negativeControls$trueEffectSize <- 1

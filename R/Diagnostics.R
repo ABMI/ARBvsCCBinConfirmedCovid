@@ -1,6 +1,6 @@
 # Copyright 2019 Observational Health Data Sciences and Informatics
 #
-# This file is part of RASBlockerVsCCBinCovid
+# This file is part of RASBlockerInCovid
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -151,6 +151,7 @@ createDiagnosticsForSubset <- function(subset, allControls, outputFolder, cmOutp
                                  sprintf("bal_t%s_c%s_o%s_a%s.rds", targetId, comparatorId, outcomeId, analysisId))
     if (file.exists(balanceFileName)) {
       balance <- readRDS(balanceFileName)
+      if(nrow(balance)==0 )next
       fileName = file.path(diagnosticsFolder, 
                            sprintf("bal_t%s_c%s_o%s_a%s.csv", targetId, comparatorId, outcomeId, analysisId))
       write.csv(balance, fileName, row.names = FALSE)
@@ -160,21 +161,24 @@ createDiagnosticsForSubset <- function(subset, allControls, outputFolder, cmOutp
                             subset$analysisDescription[1], sep = "\n")
       fileName = file.path(diagnosticsFolder, 
                            sprintf("balanceScatter_t%s_c%s_o%s_a%s.png", targetId, comparatorId, outcomeId, analysisId))
-      balanceScatterPlot <- CohortMethod::plotCovariateBalanceScatterPlot(balance = balance,
-                                                                          beforeLabel = "Before PS adjustment",
-                                                                          afterLabel =  "After PS adjustment",
-                                                                          showCovariateCountLabel = TRUE,
-                                                                          showMaxLabel = TRUE,
-                                                                          title = outcomeTitle,
-                                                                          fileName = fileName)
+      try({
+        balanceScatterPlot <- CohortMethod::plotCovariateBalanceScatterPlot(balance = balance,
+                                                                            beforeLabel = "Before PS adjustment",
+                                                                            afterLabel =  "After PS adjustment",
+                                                                            showCovariateCountLabel = TRUE,
+                                                                            showMaxLabel = TRUE,
+                                                                            title = outcomeTitle,
+                                                                            fileName = fileName)
+        
+        fileName = file.path(diagnosticsFolder, 
+                             sprintf("balanceTop_t%s_c%s_o%s_a%s.png", targetId, comparatorId, outcomeId, analysisId))
+        balanceTopPlot <- CohortMethod::plotCovariateBalanceOfTopVariables(balance = balance,
+                                                                           beforeLabel = "Before PS adjustment",
+                                                                           afterLabel =  "After PS adjustment",
+                                                                           title = outcomeTitle,
+                                                                           fileName = fileName)
+      })
       
-      fileName = file.path(diagnosticsFolder, 
-                           sprintf("balanceTop_t%s_c%s_o%s_a%s.png", targetId, comparatorId, outcomeId, analysisId))
-      balanceTopPlot <- CohortMethod::plotCovariateBalanceOfTopVariables(balance = balance,
-                                                                         beforeLabel = "Before PS adjustment",
-                                                                         afterLabel =  "After PS adjustment",
-                                                                         title = outcomeTitle,
-                                                                         fileName = fileName)
     }
   }
   # Propensity score distribution --------------------------------------------------------------------------

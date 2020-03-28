@@ -1,6 +1,6 @@
 # Copyright 2019 Observational Health Data Sciences and Informatics
 #
-# This file is part of RASBlockerVsCCBinCovid
+# This file is part of RASBlockerInCovid
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,16 +27,15 @@
 #'                             Note that for SQL Server, this should include both the database and
 #'                             schema name, for example 'cdm_data.dbo'.
 #' @param cohortDatabaseSchema Schema name where intermediate data can be stored. You will need to have
-#'                             write privileges in this schema. Note that for SQL Server, this should
+#'                             write priviliges in this schema. Note that for SQL Server, this should
 #'                             include both the database and schema name, for example 'cdm_data.dbo'.
 #' @param cohortTable          The name of the table that will be created in the work database schema.
 #'                             This table will hold the exposure and outcome cohorts used in this
 #'                             study.
 #' @param oracleTempSchema     Should be used in Oracle to specify a schema where the user has write
-#'                             privileges for storing temporary tables.
+#'                             priviliges for storing temporary tables.
 #' @param outputFolder         Name of local folder to place results; make sure to use forward slashes
 #'                             (/)
-#' @param comprehensiveObservationEndDate
 #'
 #' @export
 createCohorts <- function(connectionDetails,
@@ -44,9 +43,7 @@ createCohorts <- function(connectionDetails,
                           cohortDatabaseSchema,
                           cohortTable = "cohort",
                           oracleTempSchema,
-                          outputFolder,
-                          comprehensiveObservationEndDate,
-                          targetDiseaseConceptIds) {
+                          outputFolder) {
   if (!file.exists(outputFolder))
     dir.create(outputFolder)
   
@@ -57,18 +54,16 @@ createCohorts <- function(connectionDetails,
                  cohortDatabaseSchema = cohortDatabaseSchema,
                  cohortTable = cohortTable,
                  oracleTempSchema = oracleTempSchema,
-                 outputFolder = outputFolder,
-                 comprehensiveObservationEndDate = comprehensiveObservationEndDate,
-                 targetDiseaseConceptIds= targetDiseaseConceptIds)
+                 outputFolder = outputFolder)
   
-  pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerVsCCBinCovid")
+  pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerInCovid")
   negativeControls <- read.csv(pathToCsv)
   
   ParallelLogger::logInfo("Creating negative control outcome cohorts")
   # Currently assuming all negative controls are outcome controls
   negativeControlOutcomes <- negativeControls
   sql <- SqlRender::loadRenderTranslateSql("NegativeControlOutcomes.sql",
-                                           "RASBlockerVsCCBinCovid",
+                                           "RASBlockerInCovid",
                                            dbms = connectionDetails$dbms,
                                            oracleTempSchema = oracleTempSchema,
                                            cdm_database_schema = cdmDatabaseSchema,
@@ -80,7 +75,7 @@ createCohorts <- function(connectionDetails,
   # Check number of subjects per cohort:
   ParallelLogger::logInfo("Counting cohorts")
   sql <- SqlRender::loadRenderTranslateSql("GetCounts.sql",
-                                           "RASBlockerVsCCBinCovid",
+                                           "RASBlockerInCovid",
                                            dbms = connectionDetails$dbms,
                                            oracleTempSchema = oracleTempSchema,
                                            cdm_database_schema = cdmDatabaseSchema,
@@ -95,9 +90,9 @@ createCohorts <- function(connectionDetails,
 }
 
 addCohortNames <- function(data, IdColumnName = "cohortDefinitionId", nameColumnName = "cohortName") {
-  pathToCsv <- system.file("settings", "CohortsToCreate.csv", package = "RASBlockerVsCCBinCovid")
+  pathToCsv <- system.file("settings", "CohortsToCreate.csv", package = "RASBlockerInCovid")
   cohortsToCreate <- read.csv(pathToCsv)
-  pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerVsCCBinCovid")
+  pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerInCovid")
   negativeControls <- read.csv(pathToCsv)
   
   idToName <- data.frame(cohortId = c(cohortsToCreate$cohortId,

@@ -1,6 +1,6 @@
 # Copyright 2019 Observational Health Data Sciences and Informatics
 #
-# This file is part of RASBlockerVsCCBinCovid
+# This file is part of RASBlockerInCovid
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -53,7 +53,7 @@ runCohortMethod <- function(connectionDetails,
   }
   cmAnalysisListFile <- system.file("settings",
                                     "cmAnalysisList.json",
-                                    package = "RASBlockerVsCCBinCovid")
+                                    package = "RASBlockerInCovid")
   cmAnalysisList <- CohortMethod::loadCmAnalysisList(cmAnalysisListFile)
   tcosList <- createTcos(outputFolder = outputFolder,
                          connectionDetails = connectionDetails,
@@ -61,7 +61,7 @@ runCohortMethod <- function(connectionDetails,
                          cohortDatabaseSchema = cohortDatabaseSchema,
                          cohortTable = cohortTable,
                          oracleTempSchema = oracleTempSchema,
-                         minNumCohortForStudy = 10)
+                         minNumCohortForStudy = 20)
   outcomesOfInterest <- getOutcomesOfInterest()
   results <- CohortMethod::runCmAnalyses(connectionDetails = connectionDetails,
                                          cdmDatabaseSchema = cdmDatabaseSchema,
@@ -124,7 +124,7 @@ computeCovariateBalance <- function(row, cmOutputFolder, balanceFolder) {
 addAnalysisDescription <- function(data, IdColumnName = "analysisId", nameColumnName = "analysisDescription") {
   cmAnalysisListFile <- system.file("settings",
                                     "cmAnalysisList.json",
-                                    package = "RASBlockerVsCCBinCovid")
+                                    package = "RASBlockerInCovid")
   cmAnalysisList <- CohortMethod::loadCmAnalysisList(cmAnalysisListFile)
   idToName <- lapply(cmAnalysisList, function(x) data.frame(analysisId = x$analysisId, description = as.character(x$description)))
   idToName <- do.call("rbind", idToName)
@@ -149,7 +149,7 @@ createTcos <- function(outputFolder,
   
   ParallelLogger::logInfo("Counting cohorts")
   sql <- SqlRender::loadRenderTranslateSql("GetCounts.sql",
-                                           "RASBlockerVsCCBinCovid",
+                                           "RASBlockerInCovid",
                                            dbms = connectionDetails$dbms,
                                            oracleTempSchema = oracleTempSchema,
                                            cdm_database_schema = cdmDatabaseSchema,
@@ -162,7 +162,7 @@ createTcos <- function(outputFolder,
   counts <- addCohortNames(counts)
   DatabaseConnector::disconnect(conn)
   
-  pathToCsv <- system.file("settings", "TcosOfInterest.csv", package = "RASBlockerVsCCBinCovid")
+  pathToCsv <- system.file("settings", "TcosOfInterest.csv", package = "RASBlockerInCovid")
   tcosOfInterest <- read.csv(pathToCsv, stringsAsFactors = FALSE)
   allControls <- getAllControls(outputFolder)
   tcs <- unique(rbind(tcosOfInterest[, c("targetId", "comparatorId")],
@@ -202,7 +202,7 @@ createTcos <- function(outputFolder,
 }
 
 getOutcomesOfInterest <- function() {
-  pathToCsv <- system.file("settings", "TcosOfInterest.csv", package = "RASBlockerVsCCBinCovid")
+  pathToCsv <- system.file("settings", "TcosOfInterest.csv", package = "RASBlockerInCovid")
   tcosOfInterest <- read.csv(pathToCsv, stringsAsFactors = FALSE) 
   outcomeIds <- as.character(tcosOfInterest$outcomeIds)
   outcomeIds <- do.call("c", (strsplit(outcomeIds, split = ";")))
@@ -217,7 +217,7 @@ getAllControls <- function(outputFolder) {
     allControls <- read.csv(allControlsFile)
   } else {
     # Include only negative controls
-    pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerVsCCBinCovid")
+    pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerInCovid")
     allControls <- read.csv(pathToCsv)
     allControls$oldOutcomeId <- allControls$outcomeId
     allControls$targetEffectSize <- rep(1, nrow(allControls))

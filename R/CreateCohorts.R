@@ -1,6 +1,6 @@
 # Copyright 2019 Observational Health Data Sciences and Informatics
 #
-# This file is part of RASBlockerVsCCBinCovid
+# This file is part of RASBlockerInCovid
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,13 +20,11 @@
                            cohortDatabaseSchema,
                            cohortTable,
                            oracleTempSchema,
-                           outputFolder,
-                           comprehensiveObservationEndDate,
-                           targetDiseaseConceptIds) {
+                           outputFolder) {
   
   # Create study cohort table structure:
   sql <- SqlRender::loadRenderTranslateSql(sqlFilename = "CreateCohortTable.sql",
-                                           packageName = "RASBlockerVsCCBinCovid",
+                                           packageName = "RASBlockerInCovid",
                                            dbms = attr(connection, "dbms"),
                                            oracleTempSchema = oracleTempSchema,
                                            cohort_database_schema = cohortDatabaseSchema,
@@ -36,12 +34,12 @@
   
   
   # Instantiate cohorts:
-  pathToCsv <- system.file("settings", "CohortsToCreate.csv", package = "RASBlockerVsCCBinCovid")
+  pathToCsv <- system.file("settings", "CohortsToCreate.csv", package = "RASBlockerInCovid")
   cohortsToCreate <- read.csv(pathToCsv)
   for (i in 1:nrow(cohortsToCreate)) {
     writeLines(paste("Creating cohort:", cohortsToCreate$name[i]))
     sql <- SqlRender::loadRenderTranslateSql(sqlFilename = paste0(cohortsToCreate$name[i], ".sql"),
-                                             packageName = "RASBlockerVsCCBinCovid",
+                                             packageName = "RASBlockerInCovid",
                                              dbms = attr(connection, "dbms"),
                                              oracleTempSchema = oracleTempSchema,
                                              cdm_database_schema = cdmDatabaseSchema,
@@ -49,18 +47,16 @@
                                                 
                                              target_database_schema = cohortDatabaseSchema,
                                              target_cohort_table = cohortTable,
-                                             target_cohort_id = cohortsToCreate$cohortId[i],
-                                             comprehensive_observation_end_date = comprehensiveObservationEndDate,
-                                             target_disease_concept_ids=targetDiseaseConceptIds)
+                                             target_cohort_id = cohortsToCreate$cohortId[i])
     DatabaseConnector::executeSql(connection, sql)
   }
   
   # Fetch cohort counts:
   sql <- "SELECT cohort_definition_id, COUNT(*) AS count FROM @cohort_database_schema.@cohort_table GROUP BY cohort_definition_id"
-  sql <- SqlRender::render(sql,
+  sql <- SqlRender::renderSql(sql,
                               cohort_database_schema = cohortDatabaseSchema,
-                              cohort_table = cohortTable)
-  sql <- SqlRender::translate(sql, targetDialect = attr(connection, "dbms"))
+                              cohort_table = cohortTable)$sql
+  sql <- SqlRender::translateSql(sql, targetDialect = attr(connection, "dbms"))$sql
   counts <- DatabaseConnector::querySql(connection, sql)
   names(counts) <- SqlRender::snakeCaseToCamelCase(names(counts))
   counts <- merge(counts, data.frame(cohortDefinitionId = cohortsToCreate$cohortId,

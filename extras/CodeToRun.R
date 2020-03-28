@@ -1,4 +1,4 @@
-library(RASBlockerVsCCBinCovid)
+library(RASBlockerInCovid)
 
 # Optional: specify where the temporary files (used by the ff package) will be created:
 options(fftempdir = "s:/FFtemp")
@@ -7,7 +7,7 @@ options(fftempdir = "s:/FFtemp")
 maxCores <- parallel::detectCores()
 
 # The folder where the study intermediate and result files will be written:
-outputFolder <- "s:/RASBlockerVsCCBinCovid"
+outputFolder <- "s:/RASBlockerInCovid"
 
 # Details for connecting to the server:
 connectionDetails <- DatabaseConnector::createConnectionDetails(dbms = "pdw",
@@ -40,8 +40,6 @@ execute(connectionDetails = connectionDetails,
         databaseId = databaseId,
         databaseName = databaseName,
         databaseDescription = databaseDescription,
-        comprehensiveObservationEndDate = '2019, 12, 31',
-        targetDiseaseConceptIds = 37311061,
         createCohorts = TRUE,
         synthesizePositiveControls = TRUE,
         runAnalyses = TRUE,

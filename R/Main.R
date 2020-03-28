@@ -1,6 +1,6 @@
 # Copyright 2019 Observational Health Data Sciences and Informatics
 #
-# This file is part of RASBlockerVsCCBinCovid
+# This file is part of RASBlockerInCovid
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,10 +17,10 @@
 #' Execute the Study
 #'
 #' @details
-#' This function executes the RASBlockerVsCCBinCovid Study.
+#' This function executes the RASBlockerInCovid Study.
 #' 
 #' The \code{createCohorts}, \code{synthesizePositiveControls}, \code{runAnalyses}, and \code{runDiagnostics} arguments
-#' are intended to be used to run parts of the full study at a time, but none of the parts are considered to be optional.
+#' are intended to be used to run parts of the full study at a time, but none of the parts are considerd to be optional.
 #'
 #' @param connectionDetails    An object of type \code{connectionDetails} as created using the
 #'                             \code{\link[DatabaseConnector]{createConnectionDetails}} function in the
@@ -44,7 +44,6 @@
 #' @param databaseName         The full name of the database (e.g. 'Medicare Claims
 #'                             Synthetic Public Use Files (SynPUFs)').
 #' @param databaseDescription  A short description (several sentences) of the database.
-#' @param comprehensiveObservationEndDate  The end date of comprehensive observation period (e.g. '2019, 12, 31')
 #' @param createCohorts        Create the cohortTable table with the exposure and outcome cohorts?
 #' @param synthesizePositiveControls  Should positive controls be synthesized?
 #' @param runAnalyses          Perform the cohort method analyses?
@@ -81,8 +80,6 @@ execute <- function(connectionDetails,
                     databaseId = "Unknown",
                     databaseName = "Unknown",
                     databaseDescription = "Unknown",
-                    comprehensiveObservationEndDate = '2019, 12, 31',
-                    targetDiseaseConceptIds = 37311061,
                     createCohorts = TRUE,
                     synthesizePositiveControls = TRUE,
                     runAnalyses = TRUE,
@@ -98,7 +95,6 @@ execute <- function(connectionDetails,
   }
   
   ParallelLogger::addDefaultFileLogger(file.path(outputFolder, "log.txt"))
-  on.exit(ParallelLogger::unregisterLogger("DEFAULT"))
   
   if (createCohorts) {
     ParallelLogger::logInfo("Creating exposure and outcome cohorts")
@@ -107,9 +103,7 @@ execute <- function(connectionDetails,
                   cohortDatabaseSchema = cohortDatabaseSchema,
                   cohortTable = cohortTable,
                   oracleTempSchema = oracleTempSchema,
-                  outputFolder = outputFolder,
-                  comprehensiveObservationEndDate = comprehensiveObservationEndDate,
-                  targetDiseaseConceptIds = targetDiseaseConceptIds )
+                  outputFolder = outputFolder)
   }
   
   # Set doPositiveControlSynthesis to FALSE if you don't want to use synthetic positive controls:

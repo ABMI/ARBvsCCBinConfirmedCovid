@@ -1,16 +1,24 @@
 atlasId,atlasName,cohortId,name
-49,ARB prevalent user among hypertensive patients with covid-19,49,ARB_prevalent_user_among_hypertensive_patients_with_covid19
-50,CCB prevalent user among hypertensive patients with covid-19,50,CCB_prevalent_user_among_hypertensive_patients_with_covid19
-58,"Composite endpoint-ICU care, intubation, artificial ventilation, ECMO, and death",58,Composite_endpointICU_care_intubation_artificial_ventilation_ECMO_and_death
-24,All-cause mortality,24,Allcause_mortality
-60,ICU care,60,ICU_care
-61,Endotracheal intubation,61,Endotracheal_intubation
-62,Artificial ventilation,62,Artificial_ventilation
-63,ECMO,63,ECMO
-64,Oxygen therapy,64,Oxygen_therapy
-36,ARB prevalent user among hypertensive patients with covid-19 and without previous heart failure,36,ARB_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
-48,CCB prevalent user among hypertensive patients with covid-19 and without previous heart failure,48,CCB_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
-52,RAS blocker prevalent user among hypertensive patients with covid-19,52,RAS_blocker_prevalent_user_among_hypertensive_patients_with_covid19
-51,RAS blocker prevalent user among hypertensive patients with covid-19 and without previous heart failure,51,RAS_blocker_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
-65,ACEI prevalent user among hypertensive patients with covid-19,65,ACEI_prevalent_user_among_hypertensive_patients_with_covid19
-66,ACEI prevalent user among hypertensive patients with covid-19 and without previous heart failure,66,ACEI_prevalent_user_among_hypertensive_patients_with_covid19_and_without_previous_heart_failure
+126,[COVID19]Prevalent users of ARBs as monotherapy for HTN,126,COVID19Prevalent_users_of_ARBs_as_monotherapy_for_HTN
+137,[COVID19]Prevalent users of CCBs as monotherapy for HTN,137,COVID19Prevalent_users_of_CCBs_as_monotherapy_for_HTN
+143,[LEGEND-HTN]Total cardiovascular disease events,143,LEGENDHTNTotal_cardiovascular_disease_events
+142,"[LEGEND]Stroke, ischemic or hemorrhagic events",142,LEGENDStroke_ischemic_or_hemorrhagic_events
+141,[LEGEND-HTN]Heart failure,141,LEGENDHTNHeart_failure
+140,[LEGEND-HTN]Acute myocardial infarction events,140,LEGENDHTNAcute_myocardial_infarction_events
+5,All-cause mortality,5,Allcause_mortality
+106,Artificial ventilation,106,Artificial_ventilation
+84,"Composite endpoint: all-cause mortality, ICU care, intubation, ventilator care, and ECMO",84,Composite_endpoint_allcause_mortality_ICU_care_intubation_ventilator_care_and_ECMO
+104,ICU care,104,ICU_care
+105,Endotracheal intubation,105,Endotracheal_intubation
+107,ECMO,107,ECMO
+119,Interferon [drug exposure outcome],119,Interferon_drug_exposure_outcome
+122,Lopinavir-Ritonavir [drug exposure outcome],122,LopinavirRitonavir_drug_exposure_outcome
+120,Hydroxychloroquine [drug exposure outcome],120,Hydroxychloroquine_drug_exposure_outcome
+133,[COVID19]Prevalent users of THZ/THZ-like diuretics as monotherapy for HTN,133,COVID19Prevalent_users_of_THZTHZlike_diuretics_as_monotherapy_for_HTN
+135,[COVID19]Prevalent users of ACEi as monotherapy for HTN,135,COVID19Prevalent_users_of_ACEi_as_monotherapy_for_HTN
+138,[COVID19]Prevalent users of RAS blockers as monotherapy for HTN,138,COVID19Prevalent_users_of_RAS_blockers_as_monotherapy_for_HTN
+139,[COVID19]Continuous users of ARBs as monotherapy for HTN,139,COVID19Continuous_users_of_ARBs_as_monotherapy_for_HTN
+132,[COVID19]Continuous users of CCBs as monotherapy for HTN,132,COVID19Continuous_users_of_CCBs_as_monotherapy_for_HTN
+136,[COVID19]Continuous users of THZ/THZ-like diuretics as monotherapy for HTN,136,COVID19Continuous_users_of_THZTHZlike_diuretics_as_monotherapy_for_HTN
+134,[COVID19]Continuous users of ACEi as monotherapy for HTN,134,COVID19Continuous_users_of_ACEi_as_monotherapy_for_HTN
+130,[COVID19]Continuous users of RAS Blockers as monotherapy for HTN,130,COVID19Continuous_users_of_RAS_Blockers_as_monotherapy_for_HTN

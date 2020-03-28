@@ -5,11 +5,11 @@
 	"actions":[{
 		"type": "fileNameFindAndReplace",
 		"input": "packageName",
-		"find": "RASBlockerVsCCBinCovid"
+		"find": "RASBlockerInCovid"
 	},{
 		"type": "stringFindAndReplace",
 		"input": "packageName",
-		"find": "RASBlockerVsCCBinCovid"
+		"find": "RASBlockerInCovid"
 	},{
 		"type": "jsonArrayToCsv",
 		"input": "cohortDefinitions",

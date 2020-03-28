@@ -34,41 +34,41 @@ exportResults <- function(outputFolder,
                           databaseId,
                           databaseName,
                           databaseDescription,
-                          minCellCount = 5,
+                          minCellCount = 1,
                           maxCores) {
   exportFolder <- file.path(outputFolder, "export")
   if (!file.exists(exportFolder)) {
     dir.create(exportFolder, recursive = TRUE)
   }
-  
+
   exportAnalyses(outputFolder = outputFolder,
                  exportFolder = exportFolder)
-  
+
   exportExposures(outputFolder = outputFolder,
                   exportFolder = exportFolder)
-  
+
   exportOutcomes(outputFolder = outputFolder,
                  exportFolder = exportFolder)
-  
+
   exportMetadata(outputFolder = outputFolder,
                  exportFolder = exportFolder,
                  databaseId = databaseId,
                  databaseName = databaseName,
                  databaseDescription = databaseDescription,
                  minCellCount = minCellCount)
-  
+
   exportMainResults(outputFolder = outputFolder,
                     exportFolder = exportFolder,
                     databaseId = databaseId,
                     minCellCount = minCellCount,
                     maxCores = maxCores)
-  
+
   exportDiagnostics(outputFolder = outputFolder,
                     exportFolder = exportFolder,
                     databaseId = databaseId,
                     minCellCount = minCellCount,
                     maxCores = maxCores)
-  
+
   # Add all to zip file -------------------------------------------------------------------------------
   ParallelLogger::logInfo("Adding results to zip file")
   zipName <- file.path(exportFolder, paste0("Results", databaseId, ".zip"))
@@ -82,9 +82,9 @@ exportResults <- function(outputFolder,
 exportAnalyses <- function(outputFolder, exportFolder) {
   ParallelLogger::logInfo("Exporting analyses")
   ParallelLogger::logInfo("- cohort_method_analysis table")
-  
+
   tempFileName <- tempfile()
-  
+
   cmAnalysisListFile <- system.file("settings",
                                     "cmAnalysisList.json",
                                     package = "RASBlockerInCovid")
@@ -103,8 +103,8 @@ exportAnalyses <- function(outputFolder, exportFolder) {
   colnames(cohortMethodAnalysis) <- SqlRender::camelCaseToSnakeCase(colnames(cohortMethodAnalysis))
   fileName <- file.path(exportFolder, "cohort_method_analysis.csv")
   write.csv(cohortMethodAnalysis, fileName, row.names = FALSE)
-  
-  
+
+
   ParallelLogger::logInfo("- covariate_analysis table")
   reference <- readRDS(file.path(outputFolder, "cmOutput", "outcomeModelReference.rds"))
   getCovariateAnalyses <- function(cmAnalysis) {
@@ -113,7 +113,7 @@ exportAnalyses <- function(outputFolder, exportFolder) {
     covariateAnalysis <- ff::as.ram(cmData$analysisRef)
     covariateAnalysis <- covariateAnalysis[, c("analysisId", "analysisName")]
     colnames(covariateAnalysis) <- c("covariate_analysis_id", "covariate_analysis_name")
-    covariateAnalysis$analysis_id <- cmAnalysis$analysisId    
+    covariateAnalysis$analysis_id <- cmAnalysis$analysisId
     return(covariateAnalysis)
   }
   covariateAnalysis <- lapply(cmAnalysisList, getCovariateAnalyses)
@@ -165,9 +165,9 @@ exportOutcomes <- function(outputFolder, exportFolder) {
   outcomeOfInterest <- do.call("rbind", outcomeOfInterest)
   colnames(outcomeOfInterest) <- SqlRender::camelCaseToSnakeCase(colnames(outcomeOfInterest))
   fileName <- file.path(exportFolder, "outcome_of_interest.csv")
-  write.csv(outcomeOfInterest, fileName, row.names = FALSE) 
-  
-  
+  write.csv(outcomeOfInterest, fileName, row.names = FALSE)
+
+
   ParallelLogger::logInfo("- negative_control_outcome table")
   pathToCsv <- system.file("settings", "NegativeControls.csv", package = "RASBlockerInCovid")
   negativeControls <- read.csv(pathToCsv)
@@ -176,8 +176,8 @@ exportOutcomes <- function(outputFolder, exportFolder) {
   colnames(negativeControls) <- SqlRender::camelCaseToSnakeCase(colnames(negativeControls))
   fileName <- file.path(exportFolder, "negative_control_outcome.csv")
   write.csv(negativeControls, fileName, row.names = FALSE)
-  
-  
+
+
   synthesisSummaryFile <- file.path(outputFolder, "SynthesisSummary.csv")
   if (file.exists(synthesisSummaryFile)) {
     positiveControls <- read.csv(synthesisSummaryFile, stringsAsFactors = FALSE)
@@ -211,7 +211,7 @@ exportMetadata <- function(outputFolder,
                            databaseDescription,
                            minCellCount) {
   ParallelLogger::logInfo("Exporting metadata")
-  
+
   getInfo <- function(row) {
     cmData <- CohortMethod::loadCohortMethodData(file.path(outputFolder, "cmOutput", row$cohortMethodDataFolder), skipCovariates = TRUE)
     info <- data.frame(targetId = row$targetId,
@@ -229,8 +229,8 @@ exportMetadata <- function(outputFolder,
   reference <- split(reference, reference$cohortMethodDataFolder)
   info <- lapply(reference, getInfo)
   info <- do.call("rbind", info)
-  
-  
+
+
   ParallelLogger::logInfo("- database table")
   database <- data.frame(database_id = databaseId,
                          database_name = databaseName,
@@ -238,8 +238,8 @@ exportMetadata <- function(outputFolder,
                          is_meta_analysis = 0)
   fileName <- file.path(exportFolder, "database.csv")
   write.csv(database, fileName, row.names = FALSE)
-  
-  
+
+
   ParallelLogger::logInfo("- exposure_summary table")
   minDates <- rbind(data.frame(exposureId = info$targetId,
                                    minDate = info$targetMinDate),
@@ -256,7 +256,7 @@ exportMetadata <- function(outputFolder,
   colnames(exposureSummary) <- SqlRender::camelCaseToSnakeCase(colnames(exposureSummary))
   fileName <- file.path(exportFolder, "exposure_summary.csv")
   write.csv(exposureSummary, fileName, row.names = FALSE)
-  
+
   ParallelLogger::logInfo("- comparison_summary table")
   minDates <- aggregate(comparisonMinDate ~ targetId + comparatorId, info, min)
   maxDates <- aggregate(comparisonMaxDate ~ targetId + comparatorId, info, max)
@@ -267,8 +267,8 @@ exportMetadata <- function(outputFolder,
   colnames(comparisonSummary) <- SqlRender::camelCaseToSnakeCase(colnames(comparisonSummary))
   fileName <- file.path(exportFolder, "comparison_summary.csv")
   write.csv(comparisonSummary, fileName, row.names = FALSE)
-  
-  
+
+
   ParallelLogger::logInfo("- attrition table")
   fileName <- file.path(exportFolder, "attrition.csv")
   if (file.exists(fileName)) {
@@ -307,7 +307,7 @@ exportMetadata <- function(outputFolder,
                                "description",
                                "subjects")]
     attrition <- enforceMinCellValue(attrition, "subjects", minCellCount, silent = TRUE)
-    
+
     colnames(attrition) <- SqlRender::camelCaseToSnakeCase(colnames(attrition))
     write.table(x = attrition,
                 file = fileName,
@@ -324,8 +324,8 @@ exportMetadata <- function(outputFolder,
   }
   setTxtProgressBar(pb, 1)
   close(pb)
-  
-  
+
+
   ParallelLogger::logInfo("- covariate table")
   reference <- readRDS(file.path(outputFolder, "cmOutput", "outcomeModelReference.rds"))
   getCovariates <- function(analysisId) {
@@ -344,8 +344,8 @@ exportMetadata <- function(outputFolder,
   fileName <- file.path(exportFolder, "covariate.csv")
   write.csv(covariates, fileName, row.names = FALSE)
   rm(covariates)  # Free up memory
-  
-  
+
+
   ParallelLogger::logInfo("- cm_follow_up_dist table")
   getResult <- function(i) {
     if (reference$strataFile[i] == "") {
@@ -357,7 +357,7 @@ exportMetadata <- function(outputFolder,
                                      "cmOutput",
                                      reference$strataFile[i]))
     }
-   
+
     targetDist <- quantile(strataPop$survivalTime[strataPop$treatment == 1],
                            c(0, 0.1, 0.25, 0.5, 0.85, 0.9, 1))
     comparatorDist <- quantile(strataPop$survivalTime[strataPop$treatment == 0],
@@ -420,8 +420,8 @@ exportMainResults <- function(outputFolder,
                               minCellCount,
                               maxCores) {
   ParallelLogger::logInfo("Exporting main results")
-  
-  
+
+
   ParallelLogger::logInfo("- cohort_method_result table")
   analysesSum <- read.csv(file.path(outputFolder, "analysisSummary.csv"))
   allControls <- getAllControls(outputFolder)
@@ -446,7 +446,7 @@ exportMainResults <- function(outputFolder,
   fileName <- file.path(exportFolder, "cohort_method_result.csv")
   write.csv(results, fileName, row.names = FALSE)
   rm(results)  # Free up memory
-  
+
   ParallelLogger::logInfo("- cm_interaction_result table")
   reference <- readRDS(file.path(outputFolder, "cmOutput", "outcomeModelReference.rds"))
   loadInteractionsFromOutcomeModel <- function(i) {
@@ -487,7 +487,7 @@ exportMainResults <- function(outputFolder,
     } else {
       return(NULL)
     }
-    
+
   }
   interactions <- plyr::llply(1:nrow(reference),
                               loadInteractionsFromOutcomeModel,
@@ -508,7 +508,7 @@ exportMainResults <- function(outputFolder,
     rm(subsets)  # Free up memory
     interactions <- do.call("rbind", interactions)
     interactions$databaseId <- databaseId
-    
+
     interactions <- enforceMinCellValue(interactions, "targetSubjects", minCellCount)
     interactions <- enforceMinCellValue(interactions, "comparatorSubjects", minCellCount)
     interactions <- enforceMinCellValue(interactions, "targetOutcomes", minCellCount)
@@ -662,7 +662,7 @@ exportDiagnostics <- function(outputFolder,
                                     na.rm = TRUE)
     inferredComparatorAfterSize <- mean(balance$afterMatchingSumComparator/balance$afterMatchingMeanComparator,
                                         na.rm = TRUE)
-    
+
     balance$databaseId <- databaseId
     balance$targetId <- targetId
     balance$comparatorId <- comparatorId
@@ -738,7 +738,7 @@ exportDiagnostics <- function(outputFolder,
     setTxtProgressBar(pb, i/length(files))
   }
   close(pb)
-  
+
   ParallelLogger::logInfo("- preference_score_dist table")
   reference <- readRDS(file.path(outputFolder, "cmOutput", "outcomeModelReference.rds"))
   preparePlot <- function(row, reference) {
@@ -752,10 +752,10 @@ exportDiagnostics <- function(outputFolder,
       ps <- readRDS(psFileName)
       if (min(ps$propensityScore) < max(ps$propensityScore)) {
         ps <- CohortMethod:::computePreferenceScore(ps)
-        
+
         d1 <- density(ps$preferenceScore[ps$treatment == 1], from = 0, to = 1, n = 100)
         d0 <- density(ps$preferenceScore[ps$treatment == 0], from = 0, to = 1, n = 100)
-        
+
         result <- data.frame(databaseId = databaseId,
                              targetId = row$targetId,
                              comparatorId = row$comparatorId,
@@ -768,7 +768,7 @@ exportDiagnostics <- function(outputFolder,
     }
     return(NULL)
   }
-  subset <- unique(reference[reference$sharedPsFile != "", 
+  subset <- unique(reference[reference$sharedPsFile != "",
                              c("targetId", "comparatorId", "analysisId")])
   data <- plyr::llply(split(subset, 1:nrow(subset)),
                       preparePlot,
@@ -780,8 +780,8 @@ exportDiagnostics <- function(outputFolder,
     colnames(data) <- SqlRender::camelCaseToSnakeCase(colnames(data))
     write.csv(data, fileName, row.names = FALSE)
   }
-  
-  
+
+
   ParallelLogger::logInfo("- propensity_model table")
   getPsModel <- function(row, reference) {
     idx <- reference$analysisId == row$analysisId &
@@ -813,7 +813,7 @@ exportDiagnostics <- function(outputFolder,
     }
     return(NULL)
   }
-  subset <- unique(reference[reference$sharedPsFile != "", 
+  subset <- unique(reference[reference$sharedPsFile != "",
                              c("targetId", "comparatorId", "analysisId")])
   data <- plyr::llply(split(subset, 1:nrow(subset)),
                       getPsModel,
@@ -823,8 +823,8 @@ exportDiagnostics <- function(outputFolder,
   fileName <- file.path(exportFolder, "propensity_model.csv")
   colnames(data) <- SqlRender::camelCaseToSnakeCase(colnames(data))
   write.csv(data, fileName, row.names = FALSE)
-  
-  
+
+
   ParallelLogger::logInfo("- kaplan_meier_dist table")
   ParallelLogger::logInfo("  Computing KM curves")
   reference <- readRDS(file.path(outputFolder, "cmOutput", "outcomeModelReference.rds"))
@@ -868,7 +868,7 @@ exportDiagnostics <- function(outputFolder,
   saveKmToCsv(files[1], first = TRUE, outputFile = outputFile)
   if (length(files) > 1) {
     plyr::l_ply(files[2:length(files)], saveKmToCsv, first = FALSE, outputFile = outputFile, .progress = "text")
-  }  
+  }
   unlink(tempFolder, recursive = TRUE)
 }
 
@@ -997,7 +997,7 @@ prepareKaplanMeier <- function(population) {
   } else {
     xBreaks <- seq(0, cutoff, by = 250)
   }
-  
+
   targetAtRisk <- c()
   comparatorAtRisk <- c()
   for (xBreak in xBreaks) {
@@ -1040,7 +1040,7 @@ prepareKaplanMeier <- function(population) {
   data$comparatorSurvival <- round(data$comparatorSurvival, 4)
   data$comparatorSurvivalLb <- round(data$comparatorSurvivalLb, 4)
   data$comparatorSurvivalUb <- round(data$comparatorSurvivalUb, 4)
-  
+
   # Remove duplicate (except time) entries:
   data <- data[order(data$time), ]
   data <- data[!duplicated(data[, -1]), ]

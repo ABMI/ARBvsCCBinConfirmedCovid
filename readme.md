@@ -70,7 +70,7 @@ How to run
 	maxCores <- parallel::detectCores()
 
 	# Minimum cell count when exporting data:
-	minCellCount <- 5
+	minCellCount <- 1
 
 	# The folder where the study intermediate and result files will be written:
 	outputFolder <- "c:/RASBlockerVsCCBinCovid"

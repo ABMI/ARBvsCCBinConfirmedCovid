@@ -1,5 +1,5 @@
 {
-  "ExpressionLimit": {"Type": "First"},
+  "ExpressionLimit": {"Type": "All"},
   "CollapseSettings": {
     "CollapseType": "ERA",
     "EraPad": 0
@@ -68,7 +68,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -85,7 +85,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -102,7 +102,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -119,7 +119,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -136,7 +136,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -153,7 +153,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -170,7 +170,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -187,7 +187,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         }
       ]},
       "name": "[LEGEND] Angiotensin receptor blockers (ARBs)",
@@ -210,7 +210,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -227,7 +227,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -244,7 +244,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -261,7 +261,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -278,7 +278,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -295,7 +295,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         }
       ]},
       "name": "[LEGEND] Dihydropyridine calcium channel blockers (dCCB)",
@@ -318,7 +318,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -335,7 +335,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -352,7 +352,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -369,7 +369,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -386,7 +386,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -403,7 +403,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -420,7 +420,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -437,7 +437,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -454,7 +454,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -471,7 +471,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         }
       ]},
       "name": "[LEGEND] ACE inhibitors",
@@ -595,7 +595,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -612,7 +612,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -629,7 +629,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -646,7 +646,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -663,7 +663,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -680,7 +680,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -697,7 +697,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -714,7 +714,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -731,7 +731,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -748,7 +748,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -765,7 +765,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -782,7 +782,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         }
       ]},
       "name": "[LEGEND] beta-blockers",
@@ -805,7 +805,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -822,7 +822,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -839,7 +839,7 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         },
         {
           "isExcluded": false,
@@ -856,11 +856,176 @@
             "INVALID_REASON": "V"
           },
           "includeMapped": false,
-          "includeDescendants": true
+          "includeDescendants": false
         }
       ]},
       "name": "[LEGEND] Thiazide or thiazide-like diuretics",
       "id": 14
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 1328165,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "3443",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Diltiazem",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 1307863,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "11170",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Verapamil",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        }
+      ]},
+      "name": "[LEGEND] Non-dihydropyridine Calcium channel blockers (ndCCB)",
+      "id": 15
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 991382,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "644",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Amiloride",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 932745,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "1808",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Bumetanide",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 956874,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "4603",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Furosemide",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 970250,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "9997",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Spironolactone",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 904542,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "10763",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Triamterene",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 1309799,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "298869",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "eplerenone",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 942350,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "38413",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "torsemide",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": false
+        }
+      ]},
+      "name": "[LEGEND]Diuretics",
+      "id": 16
     }
   ],
   "cdmVersionRange": ">=5.0.0",
@@ -883,34 +1048,72 @@
             },
             "UseIndexEnd": false
           },
-          "IgnoreObservationPeriod": false,
-          "EndWindow": {
-            "UseEventEnd": true,
-            "Start": {
-              "Days": 0,
-              "Coeff": -1
-            },
-            "End": {
-              "Days": null,
-              "Coeff": 1
-            },
-            "UseIndexEnd": false
-          },
+          "IgnoreObservationPeriod": true,
+          "EndWindow": null,
           "Criteria": {"DrugEra": {
             "EraStartDate": null,
-            "CorrelatedCriteria": null,
+            "CorrelatedCriteria": {
+              "CriteriaList": [{
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": 30,
+                    "Coeff": 1
+                  },
+                  "End": {
+                    "Days": null,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": true,
+                "EndWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": null,
+                    "Coeff": -1
+                  },
+                  "End": {
+                    "Days": 0,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": true
+                },
+                "Criteria": {"ConditionOccurrence": {
+                  "OccurrenceEndDate": null,
+                  "CorrelatedCriteria": null,
+                  "ConditionTypeExclude": false,
+                  "CodesetId": 6,
+                  "ProviderSpecialty": null,
+                  "Gender": null,
+                  "VisitType": null,
+                  "First": null,
+                  "OccurrenceStartDate": null,
+                  "ConditionType": null,
+                  "ConditionSourceConcept": null,
+                  "StopReason": null,
+                  "Age": null
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              }],
+              "Type": "ALL",
+              "DemographicCriteriaList": [],
+              "Groups": [],
+              "Count": null
+            },
             "OccurrenceCount": null,
             "AgeAtStart": null,
             "GapDays": null,
-            "CodesetId": 9,
+            "CodesetId": 7,
             "AgeAtEnd": null,
             "First": null,
             "Gender": null,
-            "EraLength": {
-              "Op": "gte",
-              "Extent": null,
-              "Value": 30
-            },
+            "EraLength": null,
             "EraEndDate": null
           }},
           "Occurrence": {
@@ -924,7 +1127,7 @@
         "Groups": [],
         "Count": null
       },
-      "name": "ACEi drug exposure within 30 days before start-date",
+      "name": "Drug era of ARB overlapped with covid-19 diagnosis",
       "description": null
     },
     {
@@ -938,7 +1141,7 @@
               "Coeff": -1
             },
             "End": {
-              "Days": 0,
+              "Days": 1,
               "Coeff": -1
             },
             "UseIndexEnd": false
@@ -976,198 +1179,590 @@
     },
     {
       "expression": {
-        "CriteriaList": [
-          {
-            "RestrictVisit": false,
-            "StartWindow": {
-              "UseEventEnd": false,
-              "Start": {
-                "Days": null,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": 0,
-                "Coeff": 1
-              },
-              "UseIndexEnd": false
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": null,
+              "Coeff": -1
             },
-            "IgnoreObservationPeriod": false,
-            "EndWindow": {
-              "UseEventEnd": true,
-              "Start": {
-                "Days": 30,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": null,
-                "Coeff": 1
-              },
-              "UseIndexEnd": false
+            "End": {
+              "Days": 0,
+              "Coeff": 1
             },
-            "Criteria": {"DrugEra": {
-              "EraStartDate": null,
-              "CorrelatedCriteria": null,
-              "OccurrenceCount": null,
-              "AgeAtStart": null,
-              "GapDays": null,
-              "CodesetId": 7,
-              "AgeAtEnd": null,
-              "First": null,
-              "Gender": null,
-              "EraLength": null,
-              "EraEndDate": null
-            }},
-            "Occurrence": {
-              "Type": 1,
-              "IsDistinct": false,
-              "Count": 0
-            }
+            "UseIndexEnd": false
           },
-          {
-            "RestrictVisit": false,
-            "StartWindow": {
-              "UseEventEnd": false,
-              "Start": {
-                "Days": null,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": 0,
-                "Coeff": 1
-              },
-              "UseIndexEnd": false
+          "IgnoreObservationPeriod": true,
+          "EndWindow": null,
+          "Criteria": {"DrugEra": {
+            "EraStartDate": null,
+            "CorrelatedCriteria": {
+              "CriteriaList": [{
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": 0,
+                    "Coeff": 1
+                  },
+                  "End": {
+                    "Days": null,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": true,
+                "EndWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": null,
+                    "Coeff": -1
+                  },
+                  "End": {
+                    "Days": 30,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": true
+                },
+                "Criteria": {"ConditionOccurrence": {
+                  "OccurrenceEndDate": null,
+                  "CorrelatedCriteria": null,
+                  "ConditionTypeExclude": false,
+                  "CodesetId": 6,
+                  "ProviderSpecialty": null,
+                  "Gender": null,
+                  "VisitType": null,
+                  "First": null,
+                  "OccurrenceStartDate": null,
+                  "ConditionType": null,
+                  "ConditionSourceConcept": null,
+                  "StopReason": null,
+                  "Age": null
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              }],
+              "Type": "ALL",
+              "DemographicCriteriaList": [],
+              "Groups": [],
+              "Count": null
             },
-            "IgnoreObservationPeriod": false,
-            "EndWindow": {
-              "UseEventEnd": true,
-              "Start": {
-                "Days": 30,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": null,
-                "Coeff": 1
-              },
-              "UseIndexEnd": false
-            },
-            "Criteria": {"DrugEra": {
-              "EraStartDate": null,
-              "CorrelatedCriteria": null,
-              "OccurrenceCount": null,
-              "AgeAtStart": null,
-              "GapDays": null,
-              "CodesetId": 8,
-              "AgeAtEnd": null,
-              "First": null,
-              "Gender": null,
-              "EraLength": null,
-              "EraEndDate": null
-            }},
-            "Occurrence": {
-              "Type": 1,
-              "IsDistinct": false,
-              "Count": 0
-            }
-          },
-          {
-            "RestrictVisit": false,
-            "StartWindow": {
-              "UseEventEnd": false,
-              "Start": {
-                "Days": null,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": 0,
-                "Coeff": 1
-              },
-              "UseIndexEnd": false
-            },
-            "IgnoreObservationPeriod": false,
-            "EndWindow": {
-              "UseEventEnd": true,
-              "Start": {
-                "Days": 30,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": null,
-                "Coeff": 1
-              },
-              "UseIndexEnd": false
-            },
-            "Criteria": {"DrugEra": {
-              "EraStartDate": null,
-              "CorrelatedCriteria": null,
-              "OccurrenceCount": null,
-              "AgeAtStart": null,
-              "GapDays": null,
-              "CodesetId": 13,
-              "AgeAtEnd": null,
-              "First": null,
-              "Gender": null,
-              "EraLength": null,
-              "EraEndDate": null
-            }},
-            "Occurrence": {
-              "Type": 1,
-              "IsDistinct": false,
-              "Count": 0
-            }
-          },
-          {
-            "RestrictVisit": false,
-            "StartWindow": {
-              "UseEventEnd": false,
-              "Start": {
-                "Days": null,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": 0,
-                "Coeff": 1
-              },
-              "UseIndexEnd": false
-            },
-            "IgnoreObservationPeriod": false,
-            "EndWindow": {
-              "UseEventEnd": true,
-              "Start": {
-                "Days": 30,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": null,
-                "Coeff": 1
-              },
-              "UseIndexEnd": false
-            },
-            "Criteria": {"DrugEra": {
-              "EraStartDate": null,
-              "CorrelatedCriteria": null,
-              "OccurrenceCount": null,
-              "AgeAtStart": null,
-              "GapDays": null,
-              "CodesetId": 14,
-              "AgeAtEnd": null,
-              "First": null,
-              "Gender": null,
-              "EraLength": null,
-              "EraEndDate": null
-            }},
-            "Occurrence": {
-              "Type": 1,
-              "IsDistinct": false,
-              "Count": 0
-            }
+            "OccurrenceCount": null,
+            "AgeAtStart": null,
+            "GapDays": null,
+            "CodesetId": 9,
+            "AgeAtEnd": null,
+            "First": null,
+            "Gender": null,
+            "EraLength": null,
+            "EraEndDate": null
+          }},
+          "Occurrence": {
+            "Type": 1,
+            "IsDistinct": false,
+            "Count": 0
           }
-        ],
+        }],
         "Type": "ALL",
         "DemographicCriteriaList": [],
         "Groups": [],
         "Count": null
       },
-      "name": "No exposure to ARB, dCCB, beta-blockers, or thiazide/thiazide-like duretics within 30 days before start-date",
+      "name": "No exposure to ACE inhibitors within 30 days before start-date",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": null,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 0,
+              "Coeff": 1
+            },
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": true,
+          "EndWindow": null,
+          "Criteria": {"DrugEra": {
+            "EraStartDate": null,
+            "CorrelatedCriteria": {
+              "CriteriaList": [{
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": 0,
+                    "Coeff": 1
+                  },
+                  "End": {
+                    "Days": null,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": true,
+                "EndWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": null,
+                    "Coeff": -1
+                  },
+                  "End": {
+                    "Days": 30,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": true
+                },
+                "Criteria": {"ConditionOccurrence": {
+                  "OccurrenceEndDate": null,
+                  "CorrelatedCriteria": null,
+                  "ConditionTypeExclude": false,
+                  "CodesetId": 6,
+                  "ProviderSpecialty": null,
+                  "Gender": null,
+                  "VisitType": null,
+                  "First": null,
+                  "OccurrenceStartDate": null,
+                  "ConditionType": null,
+                  "ConditionSourceConcept": null,
+                  "StopReason": null,
+                  "Age": null
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              }],
+              "Type": "ALL",
+              "DemographicCriteriaList": [],
+              "Groups": [],
+              "Count": null
+            },
+            "OccurrenceCount": null,
+            "AgeAtStart": null,
+            "GapDays": null,
+            "CodesetId": 8,
+            "AgeAtEnd": null,
+            "First": null,
+            "Gender": null,
+            "EraLength": null,
+            "EraEndDate": null
+          }},
+          "Occurrence": {
+            "Type": 1,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "No exposure to dCCB within 30 days before start-date",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": null,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 0,
+              "Coeff": 1
+            },
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": true,
+          "EndWindow": null,
+          "Criteria": {"DrugEra": {
+            "EraStartDate": null,
+            "CorrelatedCriteria": {
+              "CriteriaList": [{
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": 0,
+                    "Coeff": 1
+                  },
+                  "End": {
+                    "Days": null,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": true,
+                "EndWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": null,
+                    "Coeff": -1
+                  },
+                  "End": {
+                    "Days": 30,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": true
+                },
+                "Criteria": {"ConditionOccurrence": {
+                  "OccurrenceEndDate": null,
+                  "CorrelatedCriteria": null,
+                  "ConditionTypeExclude": false,
+                  "CodesetId": 6,
+                  "ProviderSpecialty": null,
+                  "Gender": null,
+                  "VisitType": null,
+                  "First": null,
+                  "OccurrenceStartDate": null,
+                  "ConditionType": null,
+                  "ConditionSourceConcept": null,
+                  "StopReason": null,
+                  "Age": null
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              }],
+              "Type": "ALL",
+              "DemographicCriteriaList": [],
+              "Groups": [],
+              "Count": null
+            },
+            "OccurrenceCount": null,
+            "AgeAtStart": null,
+            "GapDays": null,
+            "CodesetId": 15,
+            "AgeAtEnd": null,
+            "First": null,
+            "Gender": null,
+            "EraLength": null,
+            "EraEndDate": null
+          }},
+          "Occurrence": {
+            "Type": 1,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "No exposure to non-dihydropyridine CCB within 30 days before start-date",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": null,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 0,
+              "Coeff": 1
+            },
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": true,
+          "EndWindow": null,
+          "Criteria": {"DrugEra": {
+            "EraStartDate": null,
+            "CorrelatedCriteria": {
+              "CriteriaList": [{
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": 0,
+                    "Coeff": 1
+                  },
+                  "End": {
+                    "Days": null,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": true,
+                "EndWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": null,
+                    "Coeff": -1
+                  },
+                  "End": {
+                    "Days": 30,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": true
+                },
+                "Criteria": {"ConditionOccurrence": {
+                  "OccurrenceEndDate": null,
+                  "CorrelatedCriteria": null,
+                  "ConditionTypeExclude": false,
+                  "CodesetId": 6,
+                  "ProviderSpecialty": null,
+                  "Gender": null,
+                  "VisitType": null,
+                  "First": null,
+                  "OccurrenceStartDate": null,
+                  "ConditionType": null,
+                  "ConditionSourceConcept": null,
+                  "StopReason": null,
+                  "Age": null
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              }],
+              "Type": "ALL",
+              "DemographicCriteriaList": [],
+              "Groups": [],
+              "Count": null
+            },
+            "OccurrenceCount": null,
+            "AgeAtStart": null,
+            "GapDays": null,
+            "CodesetId": 14,
+            "AgeAtEnd": null,
+            "First": null,
+            "Gender": null,
+            "EraLength": null,
+            "EraEndDate": null
+          }},
+          "Occurrence": {
+            "Type": 1,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "No exposure to thiazide or thiazide/like diuretics within 30 days before start-date",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": null,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 0,
+              "Coeff": 1
+            },
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": true,
+          "EndWindow": null,
+          "Criteria": {"DrugEra": {
+            "EraStartDate": null,
+            "CorrelatedCriteria": {
+              "CriteriaList": [{
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": 0,
+                    "Coeff": 1
+                  },
+                  "End": {
+                    "Days": null,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": true,
+                "EndWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": null,
+                    "Coeff": -1
+                  },
+                  "End": {
+                    "Days": 30,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": true
+                },
+                "Criteria": {"ConditionOccurrence": {
+                  "OccurrenceEndDate": null,
+                  "CorrelatedCriteria": null,
+                  "ConditionTypeExclude": false,
+                  "CodesetId": 6,
+                  "ProviderSpecialty": null,
+                  "Gender": null,
+                  "VisitType": null,
+                  "First": null,
+                  "OccurrenceStartDate": null,
+                  "ConditionType": null,
+                  "ConditionSourceConcept": null,
+                  "StopReason": null,
+                  "Age": null
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              }],
+              "Type": "ALL",
+              "DemographicCriteriaList": [],
+              "Groups": [],
+              "Count": null
+            },
+            "OccurrenceCount": null,
+            "AgeAtStart": null,
+            "GapDays": null,
+            "CodesetId": 13,
+            "AgeAtEnd": null,
+            "First": null,
+            "Gender": null,
+            "EraLength": null,
+            "EraEndDate": null
+          }},
+          "Occurrence": {
+            "Type": 1,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "No exposure to beta-blocker within 30 days before start-date",
+      "description": null
+    },
+    {
+      "expression": {
+        "CriteriaList": [{
+          "RestrictVisit": false,
+          "StartWindow": {
+            "UseEventEnd": false,
+            "Start": {
+              "Days": null,
+              "Coeff": -1
+            },
+            "End": {
+              "Days": 0,
+              "Coeff": 1
+            },
+            "UseIndexEnd": false
+          },
+          "IgnoreObservationPeriod": true,
+          "EndWindow": null,
+          "Criteria": {"DrugEra": {
+            "EraStartDate": null,
+            "CorrelatedCriteria": {
+              "CriteriaList": [{
+                "RestrictVisit": false,
+                "StartWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": 0,
+                    "Coeff": 1
+                  },
+                  "End": {
+                    "Days": null,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": false
+                },
+                "IgnoreObservationPeriod": true,
+                "EndWindow": {
+                  "UseEventEnd": false,
+                  "Start": {
+                    "Days": null,
+                    "Coeff": -1
+                  },
+                  "End": {
+                    "Days": 30,
+                    "Coeff": 1
+                  },
+                  "UseIndexEnd": true
+                },
+                "Criteria": {"ConditionOccurrence": {
+                  "OccurrenceEndDate": null,
+                  "CorrelatedCriteria": null,
+                  "ConditionTypeExclude": false,
+                  "CodesetId": 6,
+                  "ProviderSpecialty": null,
+                  "Gender": null,
+                  "VisitType": null,
+                  "First": null,
+                  "OccurrenceStartDate": null,
+                  "ConditionType": null,
+                  "ConditionSourceConcept": null,
+                  "StopReason": null,
+                  "Age": null
+                }},
+                "Occurrence": {
+                  "Type": 2,
+                  "IsDistinct": false,
+                  "Count": 1
+                }
+              }],
+              "Type": "ALL",
+              "DemographicCriteriaList": [],
+              "Groups": [],
+              "Count": null
+            },
+            "OccurrenceCount": null,
+            "AgeAtStart": null,
+            "GapDays": null,
+            "CodesetId": 16,
+            "AgeAtEnd": null,
+            "First": null,
+            "Gender": null,
+            "EraLength": null,
+            "EraEndDate": null
+          }},
+          "Occurrence": {
+            "Type": 1,
+            "IsDistinct": false,
+            "Count": 0
+          }
+        }],
+        "Type": "ALL",
+        "DemographicCriteriaList": [],
+        "Groups": [],
+        "Count": null
+      },
+      "name": "No exposure to diuretics within 30 days before start-date",
       "description": null
     }
   ],

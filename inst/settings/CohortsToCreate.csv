@@ -1,6 +1,6 @@
 atlasId,atlasName,cohortId,name
-243,[COVID19]Prevalent users of ARBs as monotherapy for HTN,243,COVID19Prevalent_users_of_ARBs_as_monotherapy_for_HTN
-244,[COVID19]Prevalent users of CCBs as monotherapy for HTN,244,COVID19Prevalent_users_of_CCBs_as_monotherapy_for_HTN
+313,ACEI user as monotherapy for HTN at COVID-19 diagnosis,313,ACEI_user_as_monotherapy_for_HTN_at_COVID19_diagnosis
+243," ARB user as monotherapy for HTN at COVID-19 diagnosis",243,_ARB_user_as_monotherapy_for_HTN_at_COVID19_diagnosis
 245,[LEGEND-HTN]Total cardiovascular disease events,245,LEGENDHTNTotal_cardiovascular_disease_events
 246,"[LEGEND]Stroke, ischemic or hemorrhagic events",246,LEGENDStroke_ischemic_or_hemorrhagic_events
 247,[LEGEND-HTN]Heart failure,247,LEGENDHTNHeart_failure
@@ -14,27 +14,5 @@ atlasId,atlasName,cohortId,name
 77,Interferon [drug exposure outcome],77,Interferon_drug_exposure_outcome
 80,Lopinavir-Ritonavir [drug exposure outcome],80,LopinavirRitonavir_drug_exposure_outcome
 81,Hydroxychloroquine [drug exposure outcome],81,Hydroxychloroquine_drug_exposure_outcome
-250,[COVID19]Prevalent users of THZ/THZ-like diuretics as monotherapy for HTN,250,COVID19Prevalent_users_of_THZTHZlike_diuretics_as_monotherapy_for_HTN
-251,[COVID19]Prevalent users of ACEi as monotherapy for HTN,251,COVID19Prevalent_users_of_ACEi_as_monotherapy_for_HTN
-252,[COVID19]Prevalent users of RAS blockers as monotherapy for HTN,252,COVID19Prevalent_users_of_RAS_blockers_as_monotherapy_for_HTN
-253,[COVID19]Continuous users of ARBs as monotherapy for HTN,253,COVID19Continuous_users_of_ARBs_as_monotherapy_for_HTN
-254,[COVID19]Continuous users of CCBs as monotherapy for HTN,254,COVID19Continuous_users_of_CCBs_as_monotherapy_for_HTN
-255,[COVID19]Continuous users of THZ/THZ-like diuretics as monotherapy for HTN,255,COVID19Continuous_users_of_THZTHZlike_diuretics_as_monotherapy_for_HTN
-256,[COVID19]Continuous users of ACEi as monotherapy for HTN,256,COVID19Continuous_users_of_ACEi_as_monotherapy_for_HTN
-257,[COVID19]Continuous users of RAS Blockers as monotherapy for HTN,257,COVID19Continuous_users_of_RAS_Blockers_as_monotherapy_for_HTN
-272,"Prevalent users of ACE inhibitors, with COVID-19, history of hypertension (Hypothesis 2)",272,Prevalent_users_of_ACE_inhibitors_with_COVID19_history_of_hypertension_Hypothesis_2
-273,"Prevalent users of dCCBs, with COVID-19, history of hypertension (Hypothesis 2)",273,Prevalent_users_of_dCCBs_with_COVID19_history_of_hypertension_Hypothesis_2
-267,"Prevalent users of thiazide/thiazide-like duretics, with COVID-19, history of hypertension (Hypothesis 2)",267,Prevalent_users_of_thiazidethiazidelike_duretics_with_COVID19_history_of_hypertension_Hypothesis_2
-269,"Prevalent users of ARBs, with COVID-19, history of hypertension (Hypothesis 2)",269,Prevalent_users_of_ARBs_with_COVID19_history_of_hypertension_Hypothesis_2
-276,"Discontinuers of ARBs, with COVID-19, history of hypertension (Hypothesis 2)",276,Discontinuers_of_ARBs_with_COVID19_history_of_hypertension_Hypothesis_2
-266,"Prevalent users of ACE inhibitors or ARBs, with COVID-19, history of hypertension (Hypothesis 2)",266,Prevalent_users_of_ACE_inhibitors_or_ARBs_with_COVID19_history_of_hypertension_Hypothesis_2
-220,"Prevalent users of ACE inhibitors or ARBs, hospitalized with COVID-19, history of hypertension (Hypothesis 2)",220,Prevalent_users_of_ACE_inhibitors_or_ARBs_hospitalized_with_COVID19_history_of_hypertension_Hypothesis_2
-217,"Prevalent users of dCCBs, hospitalized with COVID-19, history of hypertension (Hypothesis 2)",217,Prevalent_users_of_dCCBs_hospitalized_with_COVID19_history_of_hypertension_Hypothesis_2
-219,"Prevalent users of thiazide/thiazide-like duretics, hospitalized with COVID-19, history of hypertension (Hypothesis 2)",219,Prevalent_users_of_thiazidethiazidelike_duretics_hospitalized_with_COVID19_history_of_hypertension_Hypothesis_2
-216,"Prevalent users of ARBs, hospitalized with COVID-19, history of hypertension (Hypothesis 2)",216,Prevalent_users_of_ARBs_hospitalized_with_COVID19_history_of_hypertension_Hypothesis_2
-212,"Discontinuers of ARBs, hospitalized with COVID-19, history of hypertension (Hypothesis 2)",212,Discontinuers_of_ARBs_hospitalized_with_COVID19_history_of_hypertension_Hypothesis_2
-206,"Prevalent users of ACE inhibitors, hospitalized with COVID-19, history of hypertension (Hypothesis 2)",206,Prevalent_users_of_ACE_inhibitors_hospitalized_with_COVID19_history_of_hypertension_Hypothesis_2
-275,"Discontinuers of ACE inhibitors, with COVID-19, history of hypertension (Hypothesis 2)",275,Discontinuers_of_ACE_inhibitors_with_COVID19_history_of_hypertension_Hypothesis_2
-211,"Discontinuers of ACE inhibitors, hospitalized with COVID-19, history of hypertension (Hypothesis 2)",211,Discontinuers_of_ACE_inhibitors_hospitalized_with_COVID19_history_of_hypertension_Hypothesis_2
-265,"Discontinuers of ACE inhibitors or ARBs with COVID-19, history of hypertension (Hypothesis 2)",265,Discontinuers_of_ACE_inhibitors_or_ARBs_with_COVID19_history_of_hypertension_Hypothesis_2
-221,"Discontinuers of ACE inhibitors or ARBs, hospitalized with COVID-19, history of hypertension (Hypothesis 2)",221,Discontinuers_of_ACE_inhibitors_or_ARBs_hospitalized_with_COVID19_history_of_hypertension_Hypothesis_2
+314,THZ user as monotherapy for HTN at COVID-19 diagnosis,314,THZ_user_as_monotherapy_for_HTN_at_COVID19_diagnosis
+315,dCCB user as monotherapy for HTN at COVID-19 diagnosis,315,dCCB_user_as_monotherapy_for_HTN_at_COVID19_diagnosis

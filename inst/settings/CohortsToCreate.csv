@@ -16,3 +16,7 @@ atlasId,atlasName,cohortId,name
 81,Hydroxychloroquine [drug exposure outcome],81,Hydroxychloroquine_drug_exposure_outcome
 314,THZ user as monotherapy for HTN at COVID-19 diagnosis,314,THZ_user_as_monotherapy_for_HTN_at_COVID19_diagnosis
 315,dCCB user as monotherapy for HTN at COVID-19 diagnosis,315,dCCB_user_as_monotherapy_for_HTN_at_COVID19_diagnosis
+317,Prevalent ARB user as monotherapy for HTN within 30 days before COVID-19 diagnosis,317,Prevalent_ARB_user_as_monotherapy_for_HTN_within_30_days_before_COVID19_diagnosis
+320,Prevalent dCCB user as monotherapy for HTN within 30 days before COVID-19 diagnosis,320,Prevalent_dCCB_user_as_monotherapy_for_HTN_within_30_days_before_COVID19_diagnosis
+318,Prevalent ACEI user as monotherapy for HTN within 30 days before COVID-19 diagnosis,318,Prevalent_ACEI_user_as_monotherapy_for_HTN_within_30_days_before_COVID19_diagnosis
+319,Prevalent THZ user as monotherapy for HTN within 30 days before COVID-19 diagnosis,319,Prevalent_THZ_user_as_monotherapy_for_HTN_within_30_days_before_COVID19_diagnosis

@@ -61,7 +61,7 @@ runCohortMethod <- function(connectionDetails,
                          cohortDatabaseSchema = cohortDatabaseSchema,
                          cohortTable = cohortTable,
                          oracleTempSchema = oracleTempSchema,
-                         minNumCohortForStudy = 20)
+                         minNumCohortForStudy = 25)
   outcomesOfInterest <- getOutcomesOfInterest()
   results <- CohortMethod::runCmAnalyses(connectionDetails = connectionDetails,
                                          cdmDatabaseSchema = cdmDatabaseSchema,
@@ -82,17 +82,17 @@ runCohortMethod <- function(connectionDetails,
                                          outcomeCvThreads = min(4, maxCores),
                                          refitPsForEveryOutcome = FALSE,
                                          outcomeIdsOfInterest = outcomesOfInterest)
-  
+
   ParallelLogger::logInfo("Summarizing results")
-  analysisSummary <- CohortMethod::summarizeAnalyses(referenceTable = results, 
+  analysisSummary <- CohortMethod::summarizeAnalyses(referenceTable = results,
                                                      outputFolder = cmOutputFolder)
   analysisSummary <- addCohortNames(analysisSummary, "targetId", "targetName")
   analysisSummary <- addCohortNames(analysisSummary, "comparatorId", "comparatorName")
   analysisSummary <- addCohortNames(analysisSummary, "outcomeId", "outcomeName")
   analysisSummary <- addAnalysisDescription(analysisSummary, "analysisId", "analysisDescription")
   write.csv(analysisSummary, file.path(outputFolder, "analysisSummary.csv"), row.names = FALSE)
-  
-  ParallelLogger::logInfo("Computing covariate balance") 
+
+  ParallelLogger::logInfo("Computing covariate balance")
   balanceFolder <- file.path(outputFolder, "balance")
   if (!file.exists(balanceFolder)) {
     dir.create(balanceFolder)
@@ -146,7 +146,7 @@ createTcos <- function(outputFolder,
                        cohortTable,
                        oracleTempSchema,
                        minNumCohortForStudy = 10) {
-  
+
   ParallelLogger::logInfo("Counting cohorts")
   sql <- SqlRender::loadRenderTranslateSql("GetCounts.sql",
                                            "RASBlockerInCovid",
@@ -155,13 +155,13 @@ createTcos <- function(outputFolder,
                                            cdm_database_schema = cdmDatabaseSchema,
                                            work_database_schema = cohortDatabaseSchema,
                                            study_cohort_table = cohortTable)
-  
+
   conn <- DatabaseConnector::connect(connectionDetails)
   counts <- DatabaseConnector::querySql(conn, sql)
   colnames(counts) <- SqlRender::snakeCaseToCamelCase(colnames(counts))
   counts <- addCohortNames(counts)
   DatabaseConnector::disconnect(conn)
-  
+
   pathToCsv <- system.file("settings", "TcosOfInterest.csv", package = "RASBlockerInCovid")
   tcosOfInterest <- read.csv(pathToCsv, stringsAsFactors = FALSE)
   allControls <- getAllControls(outputFolder)
@@ -170,8 +170,8 @@ createTcos <- function(outputFolder,
   #subsetting tcs to only those have counts more than pre-specified minimum cohort counts in the database
   tcs<- tcs [(tcs$targetId %in% counts$cohortDefinitionId[counts$cohortCount >= minNumCohortForStudy])&
                (tcs$comparatorId %in% counts$cohortDefinitionId[counts$cohortCount >= minNumCohortForStudy]),]
-  
-  
+
+
   createTco <- function(i) {
     targetId <- tcs$targetId[i]
     comparatorId <- tcs$comparatorId[i]
@@ -203,7 +203,7 @@ createTcos <- function(outputFolder,
 
 getOutcomesOfInterest <- function() {
   pathToCsv <- system.file("settings", "TcosOfInterest.csv", package = "RASBlockerInCovid")
-  tcosOfInterest <- read.csv(pathToCsv, stringsAsFactors = FALSE) 
+  tcosOfInterest <- read.csv(pathToCsv, stringsAsFactors = FALSE)
   outcomeIds <- as.character(tcosOfInterest$outcomeIds)
   outcomeIds <- do.call("c", (strsplit(outcomeIds, split = ";")))
   outcomeIds <- unique(as.numeric(outcomeIds))

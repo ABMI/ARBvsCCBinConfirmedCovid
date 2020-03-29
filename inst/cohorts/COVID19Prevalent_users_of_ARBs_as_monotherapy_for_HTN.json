@@ -934,11 +934,11 @@
           "StartWindow": {
             "UseEventEnd": false,
             "Start": {
-              "Days": 365,
+              "Days": null,
               "Coeff": -1
             },
             "End": {
-              "Days": 0,
+              "Days": 1,
               "Coeff": -1
             },
             "UseIndexEnd": false
@@ -971,7 +971,7 @@
         "Groups": [],
         "Count": null
       },
-      "name": "Hypertension diagnosis within 365 days before start-date.",
+      "name": "Hypertension diagnosis anytime before start-date.",
       "description": null
     },
     {

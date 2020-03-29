@@ -971,7 +971,7 @@
         "Groups": [],
         "Count": null
       },
-      "name": "Hypertension diagnosis within 365 days before start-date.",
+      "name": "Hypertension diagnosis anytime before start-date.",
       "description": null
     },
     {

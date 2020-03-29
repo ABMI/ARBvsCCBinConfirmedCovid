@@ -35,11 +35,11 @@
         "isExcluded": false,
         "concept": {
           "INVALID_REASON_CAPTION": "Valid",
-          "CONCEPT_ID": 37311061,
+          "CONCEPT_ID": 320651,
           "STANDARD_CONCEPT": "S",
-          "CONCEPT_CODE": "840539006",
+          "CONCEPT_CODE": "398447004",
           "VOCABULARY_ID": "SNOMED",
-          "CONCEPT_NAME": "Disease caused by severe acute respiratory syndrome coronavirus 2",
+          "CONCEPT_NAME": "Severe acute respiratory syndrome",
           "DOMAIN_ID": "Condition",
           "STANDARD_CONCEPT_CAPTION": "Standard",
           "CONCEPT_CLASS_ID": "Clinical Finding",
@@ -861,6 +861,171 @@
       ]},
       "name": "[LEGEND] Thiazide or thiazide-like diuretics",
       "id": 14
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 1332418,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "17767",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Amlodipine",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 1328165,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "3443",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Diltiazem",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "[LEGEND] Non-dihydropyridine Calcium channel blockers (ndCCB)",
+      "id": 15
+    },
+    {
+      "expression": {"items": [
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 991382,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "644",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Amiloride",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 932745,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "1808",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Bumetanide",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 956874,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "4603",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Furosemide",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 970250,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "9997",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Spironolactone",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 904542,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "10763",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "Triamterene",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 1309799,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "298869",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "eplerenone",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        },
+        {
+          "isExcluded": false,
+          "concept": {
+            "INVALID_REASON_CAPTION": "Valid",
+            "CONCEPT_ID": 942350,
+            "STANDARD_CONCEPT": "S",
+            "CONCEPT_CODE": "38413",
+            "VOCABULARY_ID": "RxNorm",
+            "CONCEPT_NAME": "torsemide",
+            "DOMAIN_ID": "Drug",
+            "STANDARD_CONCEPT_CAPTION": "Standard",
+            "CONCEPT_CLASS_ID": "Ingredient",
+            "INVALID_REASON": "V"
+          },
+          "includeMapped": false,
+          "includeDescendants": true
+        }
+      ]},
+      "name": "[LEGEND] Diuretics",
+      "id": 16
     }
   ],
   "cdmVersionRange": ">=5.0.0",
@@ -874,44 +1039,38 @@
           "StartWindow": {
             "UseEventEnd": false,
             "Start": {
-              "Days": null,
+              "Days": 60,
               "Coeff": -1
             },
             "End": {
-              "Days": 0,
-              "Coeff": 1
+              "Days": 1,
+              "Coeff": -1
             },
             "UseIndexEnd": false
           },
           "IgnoreObservationPeriod": false,
-          "EndWindow": {
-            "UseEventEnd": true,
-            "Start": {
-              "Days": 0,
-              "Coeff": -1
-            },
-            "End": {
-              "Days": null,
-              "Coeff": 1
-            },
-            "UseIndexEnd": false
-          },
-          "Criteria": {"DrugEra": {
-            "EraStartDate": null,
+          "EndWindow": null,
+          "Criteria": {"DrugExposure": {
+            "OccurrenceEndDate": null,
             "CorrelatedCriteria": null,
-            "OccurrenceCount": null,
-            "AgeAtStart": null,
-            "GapDays": null,
+            "DrugSourceConcept": null,
             "CodesetId": 9,
-            "AgeAtEnd": null,
-            "First": null,
+            "DrugTypeExclude": false,
+            "Quantity": null,
+            "DrugType": null,
+            "ProviderSpecialty": null,
+            "EffectiveDrugDose": null,
             "Gender": null,
-            "EraLength": {
-              "Op": "gte",
-              "Extent": null,
-              "Value": 30
-            },
-            "EraEndDate": null
+            "DaysSupply": null,
+            "DoseUnit": null,
+            "VisitType": null,
+            "Refills": null,
+            "First": null,
+            "OccurrenceStartDate": null,
+            "RouteConcept": null,
+            "StopReason": null,
+            "LotNumber": null,
+            "Age": null
           }},
           "Occurrence": {
             "Type": 2,
@@ -924,7 +1083,7 @@
         "Groups": [],
         "Count": null
       },
-      "name": "ACEi drug exposure within 30 days before start-date",
+      "name": "ACEI drug exposure within 60 days before start-date",
       "description": null
     },
     {
@@ -938,7 +1097,7 @@
               "Coeff": -1
             },
             "End": {
-              "Days": 0,
+              "Days": 1,
               "Coeff": -1
             },
             "UseIndexEnd": false
@@ -982,86 +1141,38 @@
             "StartWindow": {
               "UseEventEnd": false,
               "Start": {
-                "Days": null,
+                "Days": 180,
                 "Coeff": -1
               },
               "End": {
-                "Days": 0,
-                "Coeff": 1
+                "Days": 1,
+                "Coeff": -1
               },
               "UseIndexEnd": false
             },
             "IgnoreObservationPeriod": false,
-            "EndWindow": {
-              "UseEventEnd": true,
-              "Start": {
-                "Days": 30,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": null,
-                "Coeff": 1
-              },
-              "UseIndexEnd": false
-            },
-            "Criteria": {"DrugEra": {
-              "EraStartDate": null,
+            "EndWindow": null,
+            "Criteria": {"DrugExposure": {
+              "OccurrenceEndDate": null,
               "CorrelatedCriteria": null,
-              "OccurrenceCount": null,
-              "AgeAtStart": null,
-              "GapDays": null,
-              "CodesetId": 7,
-              "AgeAtEnd": null,
-              "First": null,
-              "Gender": null,
-              "EraLength": null,
-              "EraEndDate": null
-            }},
-            "Occurrence": {
-              "Type": 1,
-              "IsDistinct": false,
-              "Count": 0
-            }
-          },
-          {
-            "RestrictVisit": false,
-            "StartWindow": {
-              "UseEventEnd": false,
-              "Start": {
-                "Days": null,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": 0,
-                "Coeff": 1
-              },
-              "UseIndexEnd": false
-            },
-            "IgnoreObservationPeriod": false,
-            "EndWindow": {
-              "UseEventEnd": true,
-              "Start": {
-                "Days": 30,
-                "Coeff": -1
-              },
-              "End": {
-                "Days": null,
-                "Coeff": 1
-              },
-              "UseIndexEnd": false
-            },
-            "Criteria": {"DrugEra": {
-              "EraStartDate": null,
-              "CorrelatedCriteria": null,
-              "OccurrenceCount": null,
-              "AgeAtStart": null,
-              "GapDays": null,
+              "DrugSourceConcept": null,
               "CodesetId": 8,
-              "AgeAtEnd": null,
-              "First": null,
+              "DrugTypeExclude": false,
+              "Quantity": null,
+              "DrugType": null,
+              "ProviderSpecialty": null,
+              "EffectiveDrugDose": null,
               "Gender": null,
-              "EraLength": null,
-              "EraEndDate": null
+              "DaysSupply": null,
+              "DoseUnit": null,
+              "VisitType": null,
+              "Refills": null,
+              "First": null,
+              "OccurrenceStartDate": null,
+              "RouteConcept": null,
+              "StopReason": null,
+              "LotNumber": null,
+              "Age": null
             }},
             "Occurrence": {
               "Type": 1,
@@ -1074,43 +1185,85 @@
             "StartWindow": {
               "UseEventEnd": false,
               "Start": {
-                "Days": null,
+                "Days": 180,
                 "Coeff": -1
               },
               "End": {
-                "Days": 0,
-                "Coeff": 1
+                "Days": 1,
+                "Coeff": -1
               },
               "UseIndexEnd": false
             },
             "IgnoreObservationPeriod": false,
-            "EndWindow": {
-              "UseEventEnd": true,
+            "EndWindow": null,
+            "Criteria": {"DrugExposure": {
+              "OccurrenceEndDate": null,
+              "CorrelatedCriteria": null,
+              "DrugSourceConcept": null,
+              "CodesetId": 7,
+              "DrugTypeExclude": false,
+              "Quantity": null,
+              "DrugType": null,
+              "ProviderSpecialty": null,
+              "EffectiveDrugDose": null,
+              "Gender": null,
+              "DaysSupply": null,
+              "DoseUnit": null,
+              "VisitType": null,
+              "Refills": null,
+              "First": null,
+              "OccurrenceStartDate": null,
+              "RouteConcept": null,
+              "StopReason": null,
+              "LotNumber": null,
+              "Age": null
+            }},
+            "Occurrence": {
+              "Type": 1,
+              "IsDistinct": false,
+              "Count": 0
+            }
+          },
+          {
+            "RestrictVisit": false,
+            "StartWindow": {
+              "UseEventEnd": false,
               "Start": {
-                "Days": 30,
+                "Days": 180,
                 "Coeff": -1
               },
               "End": {
-                "Days": null,
-                "Coeff": 1
+                "Days": 1,
+                "Coeff": -1
               },
               "UseIndexEnd": false
             },
-            "Criteria": {"DrugEra": {
-              "EraStartDate": null,
+            "IgnoreObservationPeriod": false,
+            "EndWindow": null,
+            "Criteria": {"DrugExposure": {
+              "OccurrenceEndDate": null,
               "CorrelatedCriteria": null,
-              "OccurrenceCount": null,
-              "AgeAtStart": null,
-              "GapDays": null,
+              "DrugSourceConcept": null,
               "CodesetId": 13,
-              "AgeAtEnd": null,
-              "First": null,
+              "DrugTypeExclude": false,
+              "Quantity": null,
+              "DrugType": null,
+              "ProviderSpecialty": null,
+              "EffectiveDrugDose": null,
               "Gender": null,
-              "EraLength": null,
-              "EraEndDate": null
+              "DaysSupply": null,
+              "DoseUnit": null,
+              "VisitType": null,
+              "Refills": null,
+              "First": null,
+              "OccurrenceStartDate": null,
+              "RouteConcept": null,
+              "StopReason": null,
+              "LotNumber": null,
+              "Age": null
             }},
             "Occurrence": {
-              "Type": 1,
+              "Type": 0,
               "IsDistinct": false,
               "Count": 0
             }
@@ -1120,43 +1273,129 @@
             "StartWindow": {
               "UseEventEnd": false,
               "Start": {
-                "Days": null,
+                "Days": 180,
                 "Coeff": -1
               },
               "End": {
-                "Days": 0,
-                "Coeff": 1
+                "Days": 1,
+                "Coeff": -1
               },
               "UseIndexEnd": false
             },
             "IgnoreObservationPeriod": false,
-            "EndWindow": {
-              "UseEventEnd": true,
+            "EndWindow": null,
+            "Criteria": {"DrugExposure": {
+              "OccurrenceEndDate": null,
+              "CorrelatedCriteria": null,
+              "DrugSourceConcept": null,
+              "CodesetId": 14,
+              "DrugTypeExclude": false,
+              "Quantity": null,
+              "DrugType": null,
+              "ProviderSpecialty": null,
+              "EffectiveDrugDose": null,
+              "Gender": null,
+              "DaysSupply": null,
+              "DoseUnit": null,
+              "VisitType": null,
+              "Refills": null,
+              "First": null,
+              "OccurrenceStartDate": null,
+              "RouteConcept": null,
+              "StopReason": null,
+              "LotNumber": null,
+              "Age": null
+            }},
+            "Occurrence": {
+              "Type": 0,
+              "IsDistinct": false,
+              "Count": 0
+            }
+          },
+          {
+            "RestrictVisit": false,
+            "StartWindow": {
+              "UseEventEnd": false,
               "Start": {
-                "Days": 30,
+                "Days": 180,
                 "Coeff": -1
               },
               "End": {
-                "Days": null,
-                "Coeff": 1
+                "Days": 1,
+                "Coeff": -1
               },
               "UseIndexEnd": false
             },
-            "Criteria": {"DrugEra": {
-              "EraStartDate": null,
+            "IgnoreObservationPeriod": false,
+            "EndWindow": null,
+            "Criteria": {"DrugExposure": {
+              "OccurrenceEndDate": null,
               "CorrelatedCriteria": null,
-              "OccurrenceCount": null,
-              "AgeAtStart": null,
-              "GapDays": null,
-              "CodesetId": 14,
-              "AgeAtEnd": null,
-              "First": null,
+              "DrugSourceConcept": null,
+              "CodesetId": 15,
+              "DrugTypeExclude": false,
+              "Quantity": null,
+              "DrugType": null,
+              "ProviderSpecialty": null,
+              "EffectiveDrugDose": null,
               "Gender": null,
-              "EraLength": null,
-              "EraEndDate": null
+              "DaysSupply": null,
+              "DoseUnit": null,
+              "VisitType": null,
+              "Refills": null,
+              "First": null,
+              "OccurrenceStartDate": null,
+              "RouteConcept": null,
+              "StopReason": null,
+              "LotNumber": null,
+              "Age": null
             }},
             "Occurrence": {
-              "Type": 1,
+              "Type": 0,
+              "IsDistinct": false,
+              "Count": 0
+            }
+          },
+          {
+            "RestrictVisit": false,
+            "StartWindow": {
+              "UseEventEnd": false,
+              "Start": {
+                "Days": 180,
+                "Coeff": -1
+              },
+              "End": {
+                "Days": 1,
+                "Coeff": -1
+              },
+              "UseIndexEnd": false
+            },
+            "IgnoreObservationPeriod": false,
+            "EndWindow": null,
+            "Criteria": {"DrugExposure": {
+              "OccurrenceEndDate": null,
+              "CorrelatedCriteria": null,
+              "DrugSourceConcept": null,
+              "CodesetId": 16,
+              "DrugTypeExclude": false,
+              "Quantity": null,
+              "DrugType": null,
+              "ProviderSpecialty": null,
+              "EffectiveDrugDose": null,
+              "Gender": null,
+              "DaysSupply": null,
+              "DoseUnit": null,
+              "VisitType": null,
+              "Refills": null,
+              "First": null,
+              "OccurrenceStartDate": null,
+              "RouteConcept": null,
+              "StopReason": null,
+              "LotNumber": null,
+              "Age": null
+            }},
+            "Occurrence": {
+              "Type": 0,
               "IsDistinct": false,
               "Count": 0
             }
@@ -1167,7 +1406,7 @@
         "Groups": [],
         "Count": null
       },
-      "name": "No exposure to ARB, dCCB, beta-blockers, or thiazide/thiazide-like duretics within 30 days before start-date",
+      "name": "No exposure to any other antihypertensives within 180 days before start-date",
       "description": null
     }
   ],
@@ -1179,7 +1418,44 @@
       "CodesetId": 6,
       "ProviderSpecialty": null,
       "Gender": null,
-      "VisitType": null,
+      "VisitType": [
+        {
+          "INVALID_REASON_CAPTION": "Unknown",
+          "CONCEPT_ID": 262,
+          "STANDARD_CONCEPT": null,
+          "CONCEPT_CODE": "ERIP",
+          "VOCABULARY_ID": "Visit",
+          "CONCEPT_NAME": "Emergency Room and Inpatient Visit",
+          "DOMAIN_ID": "Visit",
+          "STANDARD_CONCEPT_CAPTION": "Unknown",
+          "CONCEPT_CLASS_ID": null,
+          "INVALID_REASON": null
+        },
+        {
+          "INVALID_REASON_CAPTION": "Unknown",
+          "CONCEPT_ID": 9201,
+          "STANDARD_CONCEPT": null,
+          "CONCEPT_CODE": "IP",
+          "VOCABULARY_ID": "Visit",
+          "CONCEPT_NAME": "Inpatient Visit",
+          "DOMAIN_ID": "Visit",
+          "STANDARD_CONCEPT_CAPTION": "Unknown",
+          "CONCEPT_CLASS_ID": null,
+          "INVALID_REASON": null
+        },
+        {
+          "INVALID_REASON_CAPTION": "Unknown",
+          "CONCEPT_ID": 9203,
+          "STANDARD_CONCEPT": null,
+          "CONCEPT_CODE": "ER",
+          "VOCABULARY_ID": "Visit",
+          "CONCEPT_NAME": "Emergency Room Visit",
+          "DOMAIN_ID": "Visit",
+          "STANDARD_CONCEPT_CAPTION": "Unknown",
+          "CONCEPT_CLASS_ID": null,
+          "INVALID_REASON": null
+        }
+      ],
       "First": null,
       "OccurrenceStartDate": {
         "Op": "gte",
